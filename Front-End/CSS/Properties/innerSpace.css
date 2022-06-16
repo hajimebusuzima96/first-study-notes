@@ -1,0 +1,128 @@
+/*
+Nessa aula veremos a propriedade padding que é usada para 
+criar espaçamento interno nos elementos. Essa propriedade é
+muito utilizada, pois com ela podemos criar espaços ao redor do conteúdo de um elemento.
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html> 
+
+
+*/
+
+a {
+    font-family: Verdana;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #3198c2;
+    color: #ffffff;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+/*
+a seguir veremos uma comparação entre as propriedades margin e 
+padding, mostrando no que são diferentes.
+*/ 
+
+span {
+    font-family: Verdana;
+    font-size: 24px;
+    background-color: #3198c2;
+    color: #ffffff;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+} 
+
+/*
+Abaixo vemos um resumo das diferenças entre as propriedades margin e padding:
+Padding:
+Espaço dentro do elemento
+Fica dentro da borda
+Margin:
+Espaço fora do elemento
+Fica fora da borda
+
+Agora veremos propriedades mais específicas que 
+também aplicam espaçamento interno em elementos. 
+a seguir vamos conhecer as propriedades padding-top, padding-bottom,
+padding-right e padding-left:
+
+Agora veremos formas mais resumidas de utilizar a propriedade padding. 
+É importante conhecer essas formas porque são bastante usadas na estilização de páginas web:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personagens - Castlevania</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <img src="dracula.png">
+        <h1>Drácula</h1>
+        <p>Conde Drácula Vlad Ţepeş é um personagem de Castlevania vagamente baseado no  homônimo do romance de 1897 de Bram Stoker, Drácula, bem como na figura histórica, Vlad Drăculea. Originalmente um humano chamado Mathias Cronqvist, Drácula caiu na loucura após a morte de sua primeira esposa e se tornou um vampiro imortal graças aos poderes da Pedra Carmesim.</p>
+        <a href="https://meusite.com.br/dracula">Ver mais sobre Drácula</a>
+    </div>
+</body>
+</html>
+*/ 
+
+body {
+    background-color: #000000;
+}
+
+div {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ff1415;
+    padding: 30px 60px 80px 60px;
+}
+
+img {
+    width: 350px;
+}
+
+h1 {
+    font-family: Impact;
+    font-size: 28px;
+    color: #ff1415;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+p {
+    font-family: Verdana;
+    font-size: 18px;
+    margin-bottom: 80px;
+    color: #ff1415;
+}
+
+a {
+    font-family: Verdana;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #ff1415;
+    color: #ffffff;
+    padding: 15px 40px;
+} 
+
+
+/*
+As propriedades de espaçamento interno são muito utilizadas para 
+estilizar páginas web, pois com elas podemos criar espaços ao redor 
+do conteúdo de um elemento. Isso faz com que as bordas do elemento não 
+fiquem grudadas no seu conteúdo
+*/

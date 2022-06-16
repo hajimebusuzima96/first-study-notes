@@ -1,0 +1,129 @@
+div p {
+    font-weight: bold;
+    color: red;
+} 
+
+/*
+Ao combinar seletores de tag para definir estilos é importante verificar a 
+estrutura HTML para que apenas os elementos desejados recebam o estilo. 
+Isso acontece porque ao aplicar um estilo em uma combinação de tags, ela 
+valerá em toda a página. Por exemplo, se combinarmos as tags div e p, 
+estamos estilizando todos os parágrafos que estão dentro de uma div nessa página.
+
+*/
+
+.secao-conteudo .texto {
+    color: #109ce3;
+    border-left: 5px solid #109ce3;
+    padding-left: 10px;
+} 
+
+.texto-filme span {
+    font-weight: bold;
+}
+
+p .texto-destaque {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clube Mega Ville</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Clube Mega Ville</h1>
+        <h2>Um lugar para se divertir e relaxar.</h2>
+    </div>
+    <div class="secao-banner">
+        <img src="img/banner.jpg" alt="Clube Mega Ville">
+    </div>
+    <div>
+        <p>O clube <span>Mega Ville</span> oferece há mais de 20 anos o melhor local para lazer e diversão. Venha nos visitar um dia e desfrute de todos os serviços que podemos oferecer para você, seus amigos e sua família!</p>
+        <span class="texto-destaque">Venha e agende uma visita!</span>
+    </div>
+    <div class="secao-conteudo">
+        <img src="img/piscinas.jpg" alt="Piscinas do clube">
+        <h3>Piscinas de todos os tamanhos</h3>
+        <p>No Mega Ville temos piscina para todos os públicos. São mais de <span>15 piscinas</span> dos tamanhos mais variados para receber os nossos clientes.</p>
+        <img src="img/areas-cobertas.jpg" alt="Áreas cobertas">
+        <h3>Mais de 30 áreas cobertas</h3>
+        <p>Temos áreas cobertas espalhadas por todo o clube, e cada uma delas para a uma certa finalidade. O que você precisar poderá fazer aqui.</p>
+        <img src="img/area-criancas.jpg" alt="Área para crianças">
+        <h3>Área exclusiva para crianças</h3>
+        <p>As crianças têm um espaço <span>amplo</span> e <span>seguro</span> para desfrutar. Contamos com uma equipe que cobre toda a área monitorando as atividades no local.</p>
+    </div>
+</body>
+</html>
+*/ 
+
+
+div {
+    width: 600px;
+    margin: 10px auto;
+    font-family: Verdana;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+p span{
+    font-weight: bold;
+    color: #0aa8f9;
+}
+
+.secao-banner {
+    border-top: 1px solid #0aa8f9;
+    border-bottom: 1px solid #0aa8f9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.secao-banner img {
+    width: 600px;
+}
+
+.texto-destaque {
+    font-style: italic;
+    border-left: 2px solid #000;
+    padding-left: 5px;
+}
+
+.secao-conteudo  {
+    margin-top: 30px;
+}
+
+.secao-conteudo img {
+    border: 10px solid #0aa8f9;
+}
+
+h3 {
+    margin-bottom: 5px;
+} 
+
+
+/*
+A descendência de elementos é muito utilizada na estilização de elementos das páginas web. 
+É muito importante para o desenvolvedor front-end saber como combinar seletores de tag e de 
+classe, visto que boa parte dos projetos utiliza esse conceito.
+*/
+

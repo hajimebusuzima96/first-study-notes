@@ -1,0 +1,88 @@
+/*
+
+Motivação
+Centralizar um elemento dentro de um container,
+seja verticalmente, horizontalmente, ou em ambas as direções, é uma
+necessidade bastante comum quando estamos desenvolvendo páginas para a web.
+Em telas de login, por exemplo, normalmente optamos por manter os elementos
+principais no centro da tela, e esse comportamento deve se manter em qualquer resolução, 
+
+
+Antes das CSS3, porém, obter esse tipo de formatação visual não era uma tarefa tão simples,
+principalmente devido à incompatibilidade entre os browsers e à necessidade de garantir
+a responsividade. Com a versão mais recente das folhas de estilo, no entanto, a
+disposição de elementos em um container foi simplificada pelo recurso de Flexbox,
+que permite distribuir adequadamente o espaço interno de um container, mesmo 
+que suas dimensões sejam variáveis.
+
+Neste artigo veremos como centralizar uma div tanto verticalmente quanto horizontalmente 
+com o Flexbox, empregando para isso um código que pode ser aplicado em diferentes situações.
+
+Centralizando uma div
+Aqui, trabalharemos basicamente sobre o elemento que atuará como container, 
+de forma que as divs ou outros componentes internos sejam alinhados ao centro.
+Para isso, iniciaremos criando um arquivo HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<div class="container">
+<div class="box">
+</div>
+</div>
+</body>
+</html> 
+
+
+Nessa página, a div com classe containeré o elemento principal do nosso layout, 
+pois conterá as formatações via CSS para centralizar o seu conteúdo (nesse caso, 
+a div com classe box, que representará o formulário de login visto anteriormente). 
+Esse resultado pode ser obtido ao inserirmos,a tag  <style>, com o código CSS 
+
+
+<style>
+.container {
+width: 100vw;
+height: 100vh;
+background: #6C7A89;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.box {
+width: 300px;
+height: 300px;
+background: #fff;
+}
+body {
+margin: 0px;
+}
+</style>
+
+
+1: definimos as dimensões do container como 100% da largura (width) e altura (height) da página. Para isso, utilizamos as unidades vw e vh das CSS3, que representam, respectivamente, a largura e a altura da viewport;
+2: alteramos a cor do plano de fundo da div container, para melhor simular o resultado visto na Figura 1;
+3: definimos a propriedade display do container como flex. Essa é a configuração que faz com que, de fato, a div utilize o recurso de layout flexível (Flexbox);
+4: com a propriedade flex-direction, fazemos com que os itens internos sejam dispostos horizontalmente, ou seja, em forma de linha (row);
+5: configuramos a disposição dos elementos internos como centralizados na direção definida na propriedade anterior, ou seja, os itens ficarão no centro da linha (horizontalmente);
+6: com a propriedade align-items definida como center, fazemos com que os elementos internos sejam também alinhados na vertical;
+7: configuramos a div box com o plano de fundo branco e dimensões fixas.
+8: removemos as margens do corpo do documento, fazendo assim com que a div container ocupe toda a página.
+
+Ao acessarmos esse documento no browser, veremos a div posicionada no centro, 
+como mostra a Figura 2, e mesmo redimensionando o browser, notaremos que ela mantém 
+esse comportamento.
+
+O mesmo resultado visual poderia ser obtido se definíssemos a propriedade
+flex-direction como column. Nesse caso, seria preciso configurar a disposição dos 
+elementos internos para ocorrer na direção vertical, enquanto a propriedade align-items
+passaria a atuar na direção horizontal.
+
+
+
+*/

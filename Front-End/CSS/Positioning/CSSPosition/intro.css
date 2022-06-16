@@ -1,0 +1,40 @@
+/*
+A posição de um elemento em uma página pode ser controlada 
+utilizando a propriedade position. Ela pode receber quatro valores. 
+Cada um deles representa um modelo de posicionamento do CSS:
+
+Fluxo normal
+Posicionamento relativo
+Posicionamento absoluto
+Posicionamento fixo
+Fluxo normal
+
+É o modelo de posicionamento utilizado por padrão.
+Nele os elementos de bloco passarão a iniciar em uma nova linha, 
+empurrando os demais para baixo.
+dois elementos de bloco nunca dividem a mesma linha, mesmo que haja 
+espaço disponível para isso.
+
+
+Posicionamento relativo
+Nesse modelo o elemento pode ser movido para cima, baixo,
+esquerda ou direita tendo como ponto de partida a sua posição no fluxo normal.
+os elementos ao redor daquele que
+está posicionado relativamente não são afetados.
+
+Posicionamento absoluto
+O elemento é removido do fluxo normal.
+
+Na Figura 3 usamos esse posicionamento no h3 para movê-lo para o topo e para a 
+direita da página. Note que cada outro elemento na página se comporta como se o
+título não estivesse mais nela.
+
+
+Posicionamento fixo
+Essa é uma forma de posicionamento absoluto, mas o elemento não se move 
+quando o usuário utiliza as barras de rolagem da janela do navegador.
+
+
+
+
+*/

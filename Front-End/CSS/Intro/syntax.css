@@ -1,0 +1,28 @@
+/*
+Como vimos na aula passada, o CSS tem como tarefa alterar a
+aparência de uma página web. Veremos no flow a seguir como é a 
+sintaxe do CSS e como podemos usá-lo em uma página web:
+
+
+
+
+Nos Códigos 1 e 2 vemos os códigos que foram usados.
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+</head>
+    <body>
+        <h1>Introdução ao CSS</h1>
+        <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    </body>D
+</html>
+*/ 
+
+h1 {
+    font-size: 28px;
+    color: blue;
+}
+

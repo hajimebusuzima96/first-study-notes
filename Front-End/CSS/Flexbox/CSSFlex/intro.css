@@ -1,0 +1,146 @@
+/*
+Estilizando a página de cursos
+Neste exemplo veremos como criar uma página onde a altura dos boxes
+se ajusta, assim o layout da página não quebra devido ao tamanho do 
+seu conteúdo, utilizando a propriedade Flex do CSS. Confira!
+
+Utilizando a propriedade Flex do CSS para deixar conteúdo responsivo
+Neste exemplo apresentamos o desenvolvimento de um conteúdo que tem por 
+finalidade ajustar a altura dos seus elementos automaticamente. Dessa forma,
+podemos trabalhar com conteúdos dinâmicos sem a preocupação de quebras em nosso layout. 
+
+
+Essa organização é possível graças à propriedade display:flex do CSS, pois quando 
+definimos o elemento filho de um contêiner, o mesmo pode ser disposto em qualquer
+direção e sua dimensão se torna flexível.
+*/
+
+
+
+
+/*
+Estilizando a página de cursos
+
+Neste exemplo veremos como criar uma página onde a altura dos boxes se ajusta, assim o layout da página não quebra devido ao tamanho do seu conteúdo, utilizando a propriedade Flex do CSS. Confira!
+
+Estrutura do HTML
+No cabeçalho da página referenciamos a nossa folha de estilos, o arquivo style.css. No corpo do documento, entre as tags <body>, definimos todo o conteúdo e inserimos a tag <main>. Nela inserimos uma div com uma class chamada wrapper.
+
+<main>
+    <div class="wrapper">
+         ...
+    </div>
+</main>
+Em seguida, dentro da div anterior inserimos o conteúdo dos blocos. Neles definimos os textos e suas respectivas imagens. Note que definimos a class block para a div que engloba o conteúdo, block-img para div que engloba as imagens, block-desc para a descrição textual do bloco e block-link para o botão que fica no rodapé do bloco.
+
+<div class="block">
+     <div class="block-img">
+          <img src="img/html5.png" alt="HTML5">
+     </div>
+     <div class="block-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     </div>
+     <div class="block-link">
+          <a href="#">Ver mais</a>
+     </div>
+</div>
+*/ 
+
+
+/*
+
+Estilizando a página de cursos
+Neste exemplo veremos como criar uma página onde a altura dos boxes se ajusta, assim o layout da página não quebra devido ao tamanho do seu conteúdo, utilizando a propriedade Flex do CSS. Confira!
+
+Formatação com CSS
+Definimos as propriedades que englobam o conteúdo principal, que são as classes .wrapper e .block. Em ambas definimos o display como flexível (flex).
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.block {
+    width: calc(100%/3 - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+1: definimos a propriedade flex-wrap com o valor wrap, que faz a quebra de linha de acordo com a largura do elemento interno.
+2: definimos que a largura do elemento é calc(100%/3 - 20px). Pegamos 100% do valor e dividimos por 3, que é a quantidade de itens que queremos por linha, e desconsideramos o valor das margens aplicado na linha 11, onde temos 10px para a direita e 10px para a esquerda.
+3: informamos que o comportamento dos elementos deve ser a exibição por colunas.
+
+Nos itens que queremos aplicar a altura dinâmica, ou seja, que terão o comportamento flexível, precisamos aplicar a propriedade flex, que pode ser representada de duas formas: condensada (linha 3) e normal (linhas 8 a 10).
+
+.block-img {
+    height: calc(((100vw - (100vw - 900px))/3 - 20px) /2);
+    flex: 0 0 auto;
+}
+
+.block-desc {
+    padding: 15px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+A propriedade flex-grow especifica o quanto o item crescerá em relação ao restante dos itens flexíveis dentro do mesmo contêiner.
+A propriedade flex-shrink especifica como o item encolherá em relação ao restante dos itens flexíveis dentro do mesmo contêiner.
+A propriedade flex-basis especifica o comprimento inicial de um item flexível. Resumindo a propriedade:
+
+Definindo o valor "1 1 auto", informo que o conteúdo poderá ser expandido, ou seja, crescendo/encolhendo;
+Definindo o valor "0 0 auto" informo que o conteúdo não será expandido.
+
+
+1: definimos um cálculo dinâmico para a altura da nossa imagem. Quando inserimos o valor ((100vw - (100vw - 900px))/3 - 20px) estamos informando a largura do nosso bloco, semelhante ao que fizemos na classe .block da linha 10. Porém, agora estamos utilizando o valor da área útil e no final dividimos o conteúdo por 2 a fim de termos uma proporção de 2/1 para nossa imagem.
+*/
+
+/*
+Estilizando a página de cursos
+Neste exemplo veremos como criar uma página onde a altura dos boxes se ajusta,
+assim o layout da página não quebra devido ao tamanho do seu conteúdo, 
+utilizando a propriedade Flex do CSS. Confira!
+
+
+Criação das Media Queries
+Por fim, definimos todos os media query que são utilizados nesse exemplo, 
+lembrando que estes não influenciarão na propriedade flex, mas utilizamos 
+os mesmos apenas para ajustar a largura do box e a altura das imagens.
+
+
+
+@media (max-width: 768px){
+    .block {
+        width: calc(100%/2 - 20px);
+    }
+    .block-img {
+        height: calc((100vw /2 - 20px) /2);
+    }
+
+}
+@media (max-width: 425px){
+    .block {
+        width: calc(100% - 20px);
+    }
+    .block-img {
+        height: calc((100vw - 20px) /2);
+    }
+}
+@media (max-width: 320px){
+    .block {
+        width: calc(100%);
+        margin: 10px 0;
+        box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.2);
+        border: none;
+    }
+    .block-img {
+        height: calc(100vw /2);
+    }
+}
+
+
+*/

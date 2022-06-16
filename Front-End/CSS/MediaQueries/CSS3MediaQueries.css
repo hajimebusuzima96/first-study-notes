@@ -1,0 +1,91 @@
+/*
+Motivação
+
+A regra @media, inserida na versão 2 das CSS, permitia a aplicação condicional de
+estilos, dependendo do tipo de dispositivo/mídia (media types) por meio do qual a
+página fosse acessada. Assim, era possível utilizar, por exemplo, uma formatação
+padrão quando o site fosse acessado via browser, e um estilo diferenciado para 
+o modo de impressão.
+
+Nas CSS3, esse recurso foi expandido para permitir o uso de queries (filtros), 
+capazes de avaliar não só o tipo de mídia, mas também parâmetros como orientação
+da página, largura e altura. Isso permite, por exemplo, a aplicação de estilos 
+diferentes para telas maiores (desktops) e menores (tablets e smartphones), 
+adequando a forma como o conteúdo é exibido para o usuário, a fim de oferecer sempre 
+a melhor experiência.
+
+Media types
+Até as CSS2, para aplicar um estilo com base na regra @media, bastava utilizar 
+a seguinte sintaxe:
+
+@media [media type] {
+         estilos
+}
+Para o argumento [media type], os valores suportados são: screen, para 
+visualização em telas quaisquer; print, para telas de impressão; speech para 
+sintetizadores de voz ou leitores de tela; ou all, para todos os tipos, all é 
+o valor padrão caso não tenha sido definido uma media type. Na parte interna da 
+regra, mantemos a sintaxe padrão das CSS, com seus seletores e demais regras.
+
+A Listagem 1 apresenta um exemplo de uso do @media que altera a cor do texto 
+dependendo do tipo de mídia. Dessa forma, quando a página for acessada de um 
+browser, visualizaremos a cor azul; já em modo de impressão, visualizaremos a cor vermelha.
+
+@media screen {
+    body {
+        color: blue;
+    }
+}
+@media print {
+    body {
+        color: red;
+    }
+}
+Listagem 1. Exemplo de uso dos media types
+Observe, na Figura 1, o resultado desse código. Enquanto na parte
+superior vemos o texto na cor padrão ao acessar a página pelo browser, na parte 
+inferior vemos o mesmo texto em vermelho, por utilizarmos o comando de impressão.
+
+*/ 
+
+/*
+Media Queries
+Nas CSS3, a sintaxe para uso das media queries deriva daquela que vimos anteriormente,
+adicionando apenas alguns argumentos e operadores, como podemos observar a seguir:
+
+@media [not|only] [media type] and ([query]) {
+       estilos
+}
+Os operadores not e only permitem negar um tipo de mídia, ou especificar que apenas 
+determinado tipo seja atendido, respectivamente. Por exemplo, a expressão not speech 
+faria com que as regras não fossem aplicadas a leitores de tela, enquanto que only 
+screen faria com que apenas telas fossem atendidas.
+
+Por sua vez, o operador and faz a ligação entre o tipo de mídia e o filtro adicional 
+que será especificado entre parênteses, no lugar de query. Nesse ponto podemos 
+utilizar as diversas propriedades da mídia, como orientação, largura e altura, 
+para obter os resultados desejados.
+
+Na Listagem 2 temos um exemplo de uso das media queries. Com esse código, 
+aplicamos o plano de fundo azul para páginas com até 640px de largura e 
+vermelho para aquelas com até 480px de largura. Acima de 640px, o 
+comportamento padrão será assumido, ou seja, será mantida a página branca.
+
+@media screen and (max-width: 640px){
+    body {
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 480px){
+    body {
+        background-color: red;
+    }
+}
+Listagem 2. Exemplo de uso das media queries
+
+Entre as várias propriedades que podem ser usadas, as mais comuns são:
+min-width, min-height, max-width, max-height, width e height. 
+A partir delas podemos, por exemplo, adaptar as páginas para apresentar o 
+comportamento responsivo, ajustando-as adequadamente conforme os diferentes 
+tamanhos de tela.
+*/

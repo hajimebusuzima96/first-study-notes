@@ -1,0 +1,41 @@
+.App {
+  background-color: #8484b3;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topo {
+  background-color: #73ffd6;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.topo h1 {
+  font-size: 22px;
+  /* background-color: #fff; */
+  /* margin: 0 0 -16px; */
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+
+.card{
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding: 5px 15px;
+}

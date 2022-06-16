@@ -1,0 +1,48 @@
+/*
+Usamos float para posicionar um elemento o mais à esquerda ou à direita possível. 
+Com isso cada outro elemento ao redor deste se ajustará ao redor dele
+*/
+
+div { 
+    float: left | right;
+} 
+
+/*
+Float possui dois valores comumente utilizados: left ou right. Left move o elemento o
+máximo possível para a esquerda e right faz o mesmo para a direita.
+
+
+Exemplo
+Quando utilizamos float é comum precisarmos controlar a largura do elemento com width. 
+Dessa forma, o elemento flutuando não acabará tomando todo o 
+espaço disponível no contêiner dele como faria no fluxo normal.
+
+No o h1 recebe a largura de 200 pixels e flutua a esquerda.
+
+*/  
+
+h1 {
+    float: left;
+    width: 200px;
+    } 
+
+/*
+No modificamos o valor da propriedade float para que o elemento flutue a direita.
+
+*/
+
+h1 {
+    float: right;
+    width: 200px;
+    }
+
+
+
+/*A propriedade float possui dois valores. 
+Left posiciona o elemento a extrema esquerda e right a extrema direita.*/
+
+
+
+
+
+

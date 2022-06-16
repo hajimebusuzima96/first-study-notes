@@ -1,0 +1,40 @@
+/* Para mudar a aparência de uma página web é necessário utilizar uma linguagem de estilo chamada CSS (Cascading Style Sheets - Folha de Estilo em Cascata). Com ela podemos mudar 
+o visual dos elementos que compõem um documento HTML.
+
+Nos Códigos 1 e 2 vemos a codificação utilizada .
+
+<h1>Mercado de Tecnologia aquecido</h1>
+<a href="#">Contato</a>
+Código 1. Código HTML
+
+*/
+h1 {
+    font-size: 32px;
+    font-family: Verdana;
+    text-align: center;
+}
+a {
+    font-size: 14px;
+    font-family: Verdana;
+    text-decoration: none;
+}
+
+/*
+Código 2. Código CSS
+
+
+
+No Código 5 segue o código CSS utilizado .
+*/
+p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+

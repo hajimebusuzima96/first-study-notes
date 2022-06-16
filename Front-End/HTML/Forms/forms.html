@@ -1,0 +1,749 @@
+<!--
+Formulários podem ser usados em uma variedade de contextos.
+Páginas de contato, login e cadastro, são alguns exemplos de uso de formulário.
+
+Você notou que cada um dos formulários tinha seu visual ajustado de acordo com o site?
+
+Isso é feito através do CSS. Apesar de não ser o foco deste curso, veja no flow a seguir 
+como ficaria um formulário estilizado com CSS:
+--> 
+
+<h1>Caixa de Sugestão</h1>
+
+<form action="https://www.meucodigo.com.br/sugestao.php">
+    <textarea name="sugestao"></textarea>
+    <button type="submit">Enviar sugestão</button>
+</form> 
+
+
+<!--
+Quando não informamos o atributo action na tag form o formulário não é enviado para o back-end, 
+mas sim para a própria página em que se encontra.
+--> 
+
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CyberExpress - Caixa de sugestões</title>
+     <link rel="stylesheet" type="text/css" href="estilo.css"/>
+ </head>
+ <body>
+     <header>
+         <span>CyberExpress</span>
+     </header>
+     <main>
+         <h1>Caixa de Sugestões</h1>
+
+         <p>Escreva na caixa de texto abaixo o que podemos fazer para melhorar
+         o espaço do CyberExpress. Deixe seu elogio, crítica ou sugestão abaixo e
+         envie pra gente!</p>
+
+         <form action="https://www.devmedia.com.br/codigos/formularios/aula2/">
+             <textarea name="sugestao"></textarea>
+             <button type="submit">Enviar sugestão</button>
+         </form>
+     </main>
+     <footer>
+         Copyright 2022 - CyberExpress
+     </footer>
+ </body>
+ </html> 
+
+ 
+
+<!---
+
+--> 
+
+<input type="text" name="nome"/>
+
+<!--
+O tipo text cria um campo genérico e pode ser usado para todo tipo de dado, 
+tais como e-mails e telefones, porém, o indicado é sempre optar pelos inputs de
+tipos específicos como email e tel, e usar o text apenas se uma opção específica
+não estiver disponível.
+-->
+
+<form>
+    <input type="text" name="nome"/>
+    <input type="date" name="data_nascimento"/>
+    <input type="email" name="email" />
+    <input type="tel" name="telefone" />
+    <input type="number" name="codigo_confirmacao" />
+    <input type="text" name="login" />
+    <input type="password" name="senha" />
+    <button type="submit">Enviar Matrícula</button>
+</form> 
+
+
+<form>
+    <label>Nome</label>
+    <input type="text">
+    <label>Email</label>
+    <input type="email">
+    <label>Login</label>
+    <input type="text">
+    <label>Senha</label>
+    <input type="password">
+    <button type="submit">Entrar</button>
+</form> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade - Matrícula</title>
+    <link rel="stylesheet" type="text/css" href="faculdade.css"/>
+</head>
+<body>
+    <header>
+        <span>Faculdade</span>
+    </header>
+    <main>
+        <h1>Matrícula</h1>
+
+        <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+            <label>Nome: </label>
+            <input type="text" name="nome"/>
+            <label>Data de Nascimento: </label>
+            <input type="date" name="data_nascimento"/>
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" />
+            <label>Melhor dia para vencimento:</label>
+            <input type="number" name="dia_vencimento" />
+            <label>Login:</label>
+            <input type="text" name="login" />
+            <label>Senha:</label>
+            <input type="password" name="senha" />
+            <button type="submit">Enviar Matrícula</button>
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Faculdade
+    </footer>
+</body>
+</html> 
+
+
+<!--Exemplo de placeholder--> 
+
+<input type="text" name="nome" placeholder="Digite seu nome"/>
+
+<!--Exemplo de required--> 
+
+<input type="text" name="nome" placeholder="Digite seu nome" required/>
+
+<!--Exemplo de maxlength e minlength--> 
+
+<input type="password" name="senha" minlength="4" maxlength="6"/>
+
+<!--Exemplo de max e min--> 
+
+<input type="number" name="idade" min="18" max="21"/>
+<input type="date" name="idade" min="2022-03-01" max="2022-03-15"/>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade - Matrícula</title>
+    <link rel="stylesheet" type="text/css" href="faculdade.css"/>
+</head>
+<body>
+    <header>
+        <span>Faculdade</span>
+    </header>
+    <main>
+        <h1>Matrícula</h1>
+
+        <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+
+            <label>Nome: </label>
+            <input placeholder="Digite seu nome completo" type="text" name="nome" required />
+
+            <label>Data de Nascimento: </label>
+            <input type="date" name="data_nascimento" max="2004-03-01" required/>
+
+            <label>Email:</label>
+            <input placeholder="exemplo@email.com" type="email" name="email" required />
+
+            <label>Telefone:</label>
+            <input placeholder="(XX) XXXXX-XXXX" type="tel" name="telefone" minlength="14" required />
+
+            <label>Melhor dia para vencimento:</label>
+            <input placeholder="Valores entre 10 e 20" type="number" name="dia_vencimento" min="10" max="20" required />
+
+            <label>Login:</label>
+            <input placeholder="Digite seu login" type="text" name="login" minlength="3" required/>
+
+            <label>Senha:</label>
+            <input placeholder="Digite sua senha" type="password" name="senha" minlength="4" maxlength="8" required />
+
+            <button type="submit">Enviar Matrícula</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Faculdade
+    </footer>
+</body>
+</html> 
+
+
+<!--
+Exemplo CheckBox 
+
+--> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input - Tel</title>
+</head>
+<body>
+    <main>
+        <form>
+            Quais seus esportes favoritos?<br><br>
+            <input type="checkbox" name="esportes[]" value="futebol"/>
+            <label>Futebol</label>
+            <input type="checkbox" name="esportes[]" value="volei"/>
+            <label>Vôlei</label>
+            <input type="checkbox" name="esportes[]" value="basquete"/>
+            <label>Basquete</label>
+            <button type="submit">Enviar formulário</button>
+        </form>
+    </main>
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input - Tel</title>
+</head>
+<body>
+    <main>
+        <form>
+            Quais seus esportes favoritos?<br><br>
+            <input type="checkbox" id="checkbox-futebol" name="esportes[]" value="futebol"/>
+            <label for="checkbox-futebol">Futebol</label>
+            <input type="checkbox" id="checkbox-volei" name="esportes[]" value="volei"/>
+            <label for="checkbox-volei">Vôlei</label>
+            <input type="checkbox" id="checkbox-basquete" name="esportes[]" value="basquete"/>
+            <label for="checkbox-basquete">Basquete</label>
+            <button type="submit">Enviar formulário</button>
+        </form>
+    </main>
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário - Seu tipo de jogo favorito</title>
+    <link rel="stylesheet" type="text/css" href="questionario.css"/>
+</head>
+<body>
+    <header>
+        <span>Questionário</span>
+    </header>
+    <main>
+        <h1>Questionário</h1>
+
+        <p>Responda o questionário abaixo marcando as opções que correspondem as suas preferências por jogos.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula5/">
+
+
+            <div class="categoria categoria-plataformas">
+                <h2 class="titulo-categoria">Quais plataformas de jogos você utiliza?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-xbox" name="plataformas[]" value="Xbox">
+                    <label for="check-xbox">Xbox</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-ps" name="plataformas[]" value="PlayStation">
+                    <label for="check-ps">PlayStation</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-switch" name="plataformas[]" value="Switch">
+                    <label for="check-switch">Switch</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-stadia" name="plataformas[]" value="Stadia">
+                    <label for="check-stadia">Stadia</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-pc" name="plataformas[]" value="PC">
+                    <label for="check-pc">PC</label>
+                </div>
+            </div>
+
+            <div class="categoria categoria-generos">
+                <h2 class="titulo-categoria">Quais seus gêneros de jogo preferidos?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-acao" name="generos[]" value="Acao">
+                    <label for="check-acao">Ação</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-aventura" name="generos[]" value="Aventura">
+                    <label for="check-aventura">Aventura</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-plataforma" name="generos[]" value="Plataforma">
+                    <label for="check-plataforma">Plataforma</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-rpg" name="generos[]" value="RPG">
+                    <label for="check-rpg">RPG</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-tiro" name="generos[]" value="Tiro">
+                    <label for="check-tiro">Tiro</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-corrida" name="generos[]" value="Corrida">
+                    <label for="check-corrida">Corrida</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar Questionário</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Questionário
+    </footer>
+</body>
+</html> 
+
+<!--
+Apesar de funcionar sozinho, o radio ganha utilidade quando usamos ao menos dois 
+inputs em uma mesma categoria.
+É possível validar se ao menos um radio foi selecionado dentro de 
+uma categoria através do atributo required
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio - Animal</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h2>Possui animal de estimação?</h2>
+            <input type="radio" name="resposta" id="animal-sim" value="sim" required/>
+            <label for="animal-sim">Sim</label>
+            <input type="radio" name="resposta" id="animal-nao" value="nao"/>
+            <label for="animal-nao">Não</label>
+            <button type="submit">Enviar formulário</button>
+        </form>
+    </main>
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCompany - Formulário de Exame</title>
+    <link rel="stylesheet" type="text/css" href="medico.css"/>
+</head>
+<body>
+    <header>
+        <span>MedCompany</span>
+    </header>
+    <main>
+        <h1>Formulário de exame</h1>
+
+        <p>Preencha o formulário abaixo com suas informações.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula6/">
+            <label>Nome</label>
+            <input type="text" name="nome" class="inputText" required />
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento" class="inputText" required />
+            <label>Email</label>
+            <input type="email" name="email" class="inputText" placeholder="email@provedor.com" required />
+
+            <div class="categoria categoria-tatuagem">
+                <h2 class="titulo-categoria">Você possui tatuagem?</h2>
+                <div class="grupo-opcao">
+                    <input type="radio" name="tatuagem" value="sim" id="tatuagem-sim" required />
+                    <label for="tatuagem-sim">Sim</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="tatuagem" value="não" id="tatuagem-nao" />
+                    <label for="tatuagem-nao">Não</label>
+                </div>
+            </div>
+
+            <div class="categoria categoria-doacao">
+                <h2 class="titulo-categoria">Última vez que doou sangue?</h2>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="6 meses" id="doacao-meses" required />
+                    <label for="doacao-meses">Nos últimos 6 meses</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="1 ano" id="doacao-ano" />
+                    <label for="doacao-ano">Há 1 ano ou mais</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="nunca" id="doacao-nunca" />
+                    <label for="doacao-nunca">Nunca doei sangue</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar Formulário</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - MedCompany
+    </footer>
+</body>
+</html> 
+
+
+<!--
+Exemplo uso de Select
+--> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h2>Selecione uma cor:</h2>
+    <form>
+        <select name="cores">
+            <option value="blue">Azul</option>
+            <option value="red">Vermelho</option>
+            <option value="yellow">Amarelo</option>
+            <option value="pink">Rosa</option>
+        </select>
+        <button type="submit">Enviar Formulário</button>
+    </form>
+</body>
+</html> 
+
+<!--Option com select-->
+<option selected value="RJ">Rio de Janeiro</option>
+
+<!--Não é uma boa prática criar um option sem o atributo value, 
+pois quando fazemos isso o value é definido internamente com 
+o conteúdo digitado entre tags, porém, isso pode não funcionar em certos navegadores.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h2 class="titulo-categoria">Selecione um estado:</h2>
+    <form>
+         <select name="estado" required>
+                <option value="">Selecione seu estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PB">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        <button type="submit">Enviar Formulário</button>
+    </form>
+</body>
+</html> 
+
+<!--Select com categorias-->
+
+<select name="jogo">
+    <optgroup label="Xbox">
+      <option value="gearsofwar">Gears of War</option>
+      <option value="haloinfinite">Halo Infinite</option>
+      <option value="forzamotorsport">Forza Motorsport</option>
+      <option value="forzahorizon">Forza Horizon</option>
+    </optgroup>
+  
+    <optgroup label="PlayStation">
+      <option value="godofwar">God of War</option>
+      <option value="uncharted">Uncharted</option>
+      <option value="thelastofus">The Last of Us</option>
+      <option value="granturismo">Gran Turismo</option>
+    </optgroup>
+  
+    <optgroup label="Nintendo">
+      <option value="mariokart">Mario Kart 8 Deluxe</option>
+      <option value="zelda">The Legend of Zelda</option>
+      <option value="mario">Super Mario Odyssey</option>
+    </optgroup>
+  </select> 
+
+
+<!--Atributo multiple-->
+
+<select name="jogo" multiple>
+    <optgroup label="Xbox">
+      <option value="gearsofwar">Gears of War</option>
+      <option value="haloinfinite">Halo Infinite</option>
+      <option value="forzamotorsport">Forza Motorsport</option>
+      <option value="forzahorizon">Forza Horizon</option>
+    </optgroup>
+  
+    <optgroup label="PlayStation">
+      <option value="godofwar">God of War</option>
+      <option value="uncharted">Uncharted</option>
+      <option value="thelastofus">The Last of Us</option>
+      <option value="granturismo">Gran Turismo</option>
+    </optgroup>
+  
+    <optgroup label="Nintendo">
+      <option value="mariokart">Mario Kart 8 Deluxe</option>
+      <option value="zelda">The Legend of Zelda</option>
+      <option value="mario">Super Mario Odyssey</option>
+    </optgroup>
+  </select> 
+
+
+<!--Atributo Size-->
+<select name="jogo" size="8" multiple>
+    <optgroup label="Xbox">
+      <option value="gearsofwar">Gears of War</option>
+      <option value="haloinfinite">Halo Infinite</option>
+      <option value="forzamotorsport">Forza Motorsport</option>
+      <option value="forzahorizon">Forza Horizon</option>
+    </optgroup>
+  
+    <optgroup label="PlayStation">
+      <option value="godofwar">God of War</option>
+      <option value="uncharted">Uncharted</option>
+      <option value="thelastofus">The Last of Us</option>
+      <option value="granturismo">Gran Turismo</option>
+    </optgroup>
+  
+    <optgroup label="Nintendo">
+      <option value="mariokart">Mario Kart 8 Deluxe</option>
+      <option value="zelda">The Legend of Zelda</option>
+      <option value="mario">Super Mario Odyssey</option>
+    </optgroup>
+</select> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas para programadores</title>
+    <link rel="stylesheet" type="text/css" href="vagas.css"/>
+</head>
+<body>
+    <header>
+        <span>Vagas</span>
+    </header>
+    <main>
+        <h1>Formulário de vagas para programadores</h1>
+
+        <p>Preencha o formulário abaixo com suas informações.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula7/">
+            <label>Nome</label>
+            <input type="text" name="nome" class="inputText" required />
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento" class="inputText" required />
+            <label>Email</label>
+            <input type="email" name="email" class="inputText" placeholder="email@provedor.com" required />
+            <label>Estado:</label>
+            <select class="select" name="estado" required>
+                <option value="">Selecione seu estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PB">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <label>Tecnologias:</label>
+            <select class="selectMultiple" name="tecnologias[]" size="6" multiple>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+                <option value="Javascript">Javascript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+                <option value="XML">XML</option>
+            </select>
+
+            <button type="submit">Enviar Formulário</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - MedCompany
+    </footer>
+</body>
+</html> 
+
+<!--O uso do fieldset ajuda não somente a organizar visualmente nossos formulários, 
+mas também ajuda muito aos usuários a encontrar os campos na hora de preencher as informações.-->
+
+<form>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+            <label>Nome</label>
+            <input type="text" name="nome"/>
+        </div>
+        <div>
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento"/>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email"/>
+        </div>
+    </fieldset>
+    <button type="submit">Enviar</button>
+</form> 
+
+<!--Exemplo FieldSet-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Receba um brince casa</title>
+    <link rel="stylesheet" type="text/css" href="fieldset.css"/>
+</head>
+<body>
+    <header>
+        <span>Revista</span>
+    </header>
+    <main>
+        <h1>Cadastro</h1>
+
+        <p>Estamos lançando uma nova revista e enviaremos o primeiro exemplar grátis para todos que se cadastrarem hoje no site.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula8/">
+
+            <fieldset>
+                <legend>Dados de contato</legend>
+
+                <label>Nome: </label>
+                <input placeholder="Digite seu nome completo" required type="text" name="nome"/>
+
+                <label>Email:</label>
+                <input placeholder="exemplo@email.com" type="email" name="email" />
+
+                <label>Telefone:</label>
+                <input placeholder="(XX) XXXXX-XXXX" type="tel" name="telefone" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de entrega</legend>
+
+                <label>Endereço:</label>
+                <input placeholder="Rua, Avenida, Travessa..." type="text" name="endereco" />
+
+                <label>Número:</label>
+                <input type="number" name="numero" />
+
+                <label>Complemento:</label>
+                <input type="text" name="complemento" />
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Revista
+    </footer>
+</body>
+</html> 
+
+

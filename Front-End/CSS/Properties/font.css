@@ -1,0 +1,245 @@
+/*
+É muito importante para o programador front-end conhecer as
+propriedades CSS a fim de ter diversas opções de estilos para usar 
+em suas páginas web. No flow a seguir veremos mais algumas propriedades
+CSS, que são bastantes utilizadas na estilização de elementos HTML:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+*/ 
+
+h1 {
+    font-size: 48px;
+    font-family: 'Verdana';
+}
+
+/*
+Existem muitas famílias de fontes no CSS. Algumas delas são fontes padrão,
+ou seja, já vem nativamente no navegador. Já outras são externas onde se 
+torna necessário instalar essas fontes ou usar um link externo para usá-las.
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com <span>desenvolvimento web</span>. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+*/ 
+
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+    font-weight: bold;
+} 
+
+/*
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+*/ 
+
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+span {
+    font-weight: bold;
+} 
+
+/*
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+<a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+*/ 
+
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+} 
+
+/*
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+*/ 
+
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+} 
+
+/*
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <h2>Linguagem de estilos</h2>
+    <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+*/ 
+
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+    text-decoration: underline;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Verdana;
+    color: gray;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+    line-height: 48px;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+} 
+
+/*
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Estilos de fonte</h1>
+
+    <div>
+        <p>No CSS temos diversas propriedades que servem para estilizar textos nas páginas web. Algumas delas são font-size, font-family, color etc. Para conhecer mais dessas fontes, clique no link abaixo.</p>
+        <a href="https://www.devmedia.com.br/estilizando-fontes-com-css/24226">Estilizando fontes no CSS</a>
+    </div>
+
+</body>
+</html>
+*/
+ 
+
+h1 {
+    font-size: 36px;
+    font-family: Arial;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div {
+    font-size: 24px;
+    font-family: Arial;
+}
+
+/*
+Ao utilizar as propriedades font-size e line-height inserimos um número seguido por px.
+Pixel (px) é uma unidade de medida. Existem outras como, por exemplo, cm (centímetros), 
+mm (milímetros), in (polegadas), 
+entre outras, porém, pixel (px) é a mais utilizada nos códigos CSS.
+*/
+
+
+

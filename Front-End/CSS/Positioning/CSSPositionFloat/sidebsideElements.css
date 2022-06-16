@@ -1,0 +1,19 @@
+/*
+A propriedade float é muito utilizada para criar colunas.
+
+Exemplo
+No Código 1 dividimos uma área da página em duas colunas
+movendo o h3 para a esquerda e a lista para a direita.
+*/
+
+h3 {
+    float: left;
+    width: 200px;
+    }
+    
+    ul {
+    float: right;
+    width: 200px;
+    }
+
+

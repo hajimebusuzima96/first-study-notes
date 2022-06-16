@@ -1,0 +1,30 @@
+/*
+Pseudo-classes e Pseudo-elementos são utilizados não apenas 
+para alterar o visual de elementos HTML, mas também são capazes 
+de alterar comportamentos, tais como ocultar e exibir elementos
+dinamicamente, tudo isso usando apenas o CSS.
+
+Neste curso vamos aprender os seguintes conceitos:
+
+first-of-type
+nth-of-type
+last-of-type
+first-child
+last-child
+nth-child
+nth-last-child
+first-letter
+first-line
+hover
+Before
+After
+
+
+As pseudo-classes possuem diversas utilidades para o desenvolvedor, 
+que vão desde definir o estilo dos estados de um elemento até alterá-lo
+de uma posição específica na estrutura, enquanto os pseudo-elementos tem 
+como objetivo único permitir ao desenvolvedor alterar partes específicas de 
+um elemento, tais como a primeira letra ou primeira linha de um parágrafo.
+
+
+*/

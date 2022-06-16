@@ -1,0 +1,158 @@
+/*
+O CSS é essencial no design de aplicações web (e mobile, em alguns casos). 
+Diretamente relacionado a isso, o posicionamento dos elementos é uma parte
+importante da criação dos layouts. Assim, precisamos conhecer e entender as 
+possibilidades que temos dentro da propriedade position, isto é, as opções fixed,
+relative e absolute.
+
+Guia :
+relative
+absolute
+fixed
+
+A propriedade position também aceita o valor static, que representa o valor padrão, 
+mas ele não indica posicionamento algum, ou seja, é o valor para "nenhum posicionamento 
+específico" do elemento. Nesse artigo, veremos as diferenças entre essas opções e 
+quando cada uma deve ser utilizada.
+
+Opção 1: "position: relative"
+A primeira opção de posicionamento para um elemento é a relative.
+Como o nome sugere, ela especifica uma posição relativa do elemento em relação a algo: 
+o elemento pai.
+
+A posição é definida através de quatro outras propriedades: top, bottom, left e right, 
+que indicam a distância com relação ao topo, base, esquerda e direita, respectivamente,
+tomando como referência o posicionamento do elemento pai.
+
+Para entendermos melhor esse conceito, vejamos 
+
+*/
+
+.relative-parent {
+    background: #156236;
+ }
+ 
+ .relative {
+    background: #af8542;
+    height: 100px;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+ } 
+
+/*
+1 declaração da classe relative-parent. Define o estilo para o elemento pai em nosso posicionamento relativo. Observe que não há nenhuma quanto à propriedade position. Assim, temos que o valor dela é static;
+2 Especifica uma cor de fundo para os elementos da classe relative-parent. É a única característica presente nessa classe;
+5 declaração da classe relative. Define o estilo para o elemento filho, que terá seu posicionamento determinado de acordo com o posicionamento do elemento pai;
+6 indica a cor de fundo para os elementos da classe relative;
+7 propriedades de altura (height) e largura (width) para o elemento, em pixels;
+8: indica a propriedade position para nossa classe. Nesse caso, com o valor relative;
+9: especifica as distâncias com relação ao topo (top) e esquerda (left) com relação ao elemento pai. As distâncias, nesse caso, estão em pixels, mas poderia ser utilizado porcentagem ou em, uma medida relativa empregada no CSS. É importante ressaltar que esses valores podem ser negativos.
+
+
+<div class="relative-parent">
+   <div class="relative">
+   Elemento filho com posicionamento relativo
+   </div>
+</div>
+
+*/  
+
+/*
+Opção 2: "position: absolute;"
+A segunda opção de posicionamento é a absolute, ou absoluto. Ela faz com que o elemento 
+“saia” da hierarquia estabelecida pelo HTML – na prática, ele é filho da página e não de 
+um elemento qualquer no HTML definido. Assim, é possível posicionarmos esse elemento em
+qualquer lugar da página, independentemente do que temos lá. Isso pode ser útil em casos 
+que precisamos posicionar um alerta em nossa página, por exemplo, e não queremos “quebrar” 
+o layout.
+
+Apesar dessa possibilidade, é importante utilizar o layout absoluto de forma responsável, 
+uma vez que ele, por não fazer parte da hierarquia da página, pode atrapalhar o 
+desenvolvimento responsivo. Assim, o funcionamento em dispositivos com resoluções menores, 
+como tablets e smartphones, pode ser prejudicado.
+
+Na prática, para um HTML simples, como o apresentado a seguir, o <div> será filho de 
+<body>. Entretanto, como especificamos um posicionamento absoluto, o elemento pai não 
+nos interessa, uma vez que não consideraremos seu posicionamento como referência.
+
+
+
+<div class="absolute">
+Elemento com posicionamento absoluto
+</div>
+
+*/ 
+
+.absolute {
+    background: #c590f5;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    top: 35px;
+    right: 32px;
+   }
+
+
+/*Note que a classe absolute, apresentada é bastante semelhante ao CSS que vimos
+No entanto, existem algumas diferenças importantes:
+
+1: declaração da classe absolute. Define o estilo para o elemento com posicionamento absoluto;
+2: informar a cor de fundo para os elementos da classe;
+3: atribuição dos valores para altura height e largura width dos elementos da classe;
+4: determina o posicionamento dos elementos da classe, com a opção absolute;
+5: especifica duas propriedades de posicionamento: right e top, referentes à distância em relação à direita e ao topo da página. Note que essa é a mesma proposta vista anteriormente, no posicionamento relativo, mas com a diferença que estamos atribuindo a distância para a página, e não mais para um elemento pai.
+*/ 
+
+
+/*
+
+Opção 3: "position: fixed"
+Por fim, temos a opção fixed, que funciona de forma diferente em relação às demais.
+Embora seja parecida com o posicionamento absoluto, com fixed o elemento “responde”, 
+em termos de layout, ao navegador. Isso significa que, mesmo que naveguemos na página
+para cima e para baixo, o elemento ficará fixo na mesma posição sempre.
+
+Esse tipo de posicionamento é especialmente útil em casos de menu, para que o 
+usuário não perca o contato com a navegação enquanto lê uma notícia, por exemplo. 
+Sites com conteúdo extenso costumam adotar essa opção para melhorar a experiência do usuário.
+
+Para chegarmos a esse comportamento, apenas utilizamos uma nova classe CSS,
+fixed, como podemos observar no código abaixo:
+
+
+<div class="fixed">
+ Elemento com posicionamento fixo
+</div>
+
+
+*/
+
+
+.fixed {
+    background: #a4c467;
+    height: 50px;
+    width: 300px;
+    position: fixed;
+    bottom: 60px;
+    right: 32px;
+   } 
+
+
+/*
+1: declaração da classe fixed. Define as características dos elementos com posicionamento fixo;
+2: informa a cor de fundo background, alturaheight e largura width dos elementos da classe;
+3: com essa propriedade, passando o valor fixed, temos a declaração do tipo de posicionamento que queremos para os nossos elementos;
+4: especificamos as distâncias dos elementos da classe em relação ao navegador. Repare que, dessa vez, especificamos bottom e right, distância da base e direita, respectivamente. Como estamos com um posicionamento fixo, é utilizado o navegador para calcular essa distância, ou seja, o elemento permanecerá na mesma posição independentemente do lugar da página em que estivermos.
+
+
+
+Com isso, aprendemos que o posicionamento no CSS é algo relativamente simples. 
+É preciso, no entanto, um pouco de cuidado na hora de utilizar a propriedade, 
+afinal, ela é interessante para o posicionamento pontual de determinados elementos. 
+Ainda assim, antes de tomar essa decisão, considere o uso de outras opções, 
+como a propriedade float ou técnicas de desenvolvimento responsivo com grids, 
+como a adotada pelo Bootstrap e outros frameworks.
+*/
+

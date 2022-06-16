@@ -1,0 +1,45 @@
+/*
+O posicionamento fixo é um tipo de posicionamento absoluto.
+
+Quando um elemento está posicionado fixamente ele passa a ser 
+ignorado pelos demais, como se não estivesse na página.
+
+Além disso, aqui o elemento é posicionado em relação a janela do 
+navegador e se mantém parado no mesmo lugar quando o usuário utiliza o scroll.
+
+
+Sintaxe
+Para que um elemento seja posicionado dessa maneira usamos essa sintaxe:
+*/ 
+
+ a{ 
+    position: fixed;
+
+ }
+
+/*A partir disso, usamos as propriedades de deslocamento top,
+ bottom, left e right para controlar a posição do elemento na página.
+
+Exemplo
+No Código 1 deslocamos o título (h1) 25 pixels para baixo e para a direita.*/
+
+
+h1 {
+    left: 25px;
+    position: fixed;
+    top: 25px;
+} 
+
+
+/*
+Novamente utilizamos as propriedades de deslocamento para mover o elemento 
+em relação a sua posição no fluxo normal. Portanto, para mover o elemento 
+para a direita definimos para ele uma distância da esquerda utilizando left. 
+Da mesma forma, para mover o elemento para baixo distanciamos ele do topo usando top.
+*/
+
+/*
+No posicionamento fixo o elemento é posicionado em relação a janela do navegador e se mantém 
+nessa posição quando o usuário utiliza o scroll.
+*/ 
+

@@ -1,0 +1,39 @@
+/*
+O valor padrão da propriedade position é static. 
+Ele representa o fluxo normal (normal flow) de posicionamento dos elementos em uma página.
+
+No fluxo normal os elementos:
+
+Seguem o fluxo da página, sendo posicionados na ordem em que foram declarados no HTML
+Elementos de nível de bloco ocupam todo o espaço disponível na linha em que estão
+Sintaxe
+O valor padrão de position é static, por isso geralmente não é necessário utilizá-lo. 
+Caso isso seja necessário fazemos dessa forma:
+
+*/
+
+p { 
+    position: static;
+} 
+
+
+/*
+Nesse modelo de posicionamento dois elementos de nível de bloco não podem ocupar 
+uma mesma linha,mesmo quando houver espaço para isso.
+
+Quando a largura (width) não for definida para elementos de nível bloco,
+eles vão se estender por toda a linha em que foram iniciados. Com isso outros
+elementos de nível de bloco serão empurrados para baixo.
+
+Na Figura 1 vemos os elementos de nível de bloco h1, p, h3, ul e li 
+sendo posicionados dessa forma.
+*/ 
+
+p {
+    width: 200px;
+  }
+
+
+/*static é o valor padrão da propriedade position
+*/ 
+

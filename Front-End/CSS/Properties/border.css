@@ -1,0 +1,103 @@
+/*
+Nessa aula veremos propriedades que são usadas para criar bordas nos elementos. 
+Essas propriedades são muito usadas na estilização de elementos, pois com elas
+criamos linhas que ficam ao redor do elemento.
+
+No flow a seguir vemos uma introdução às bordas no CSS abordando a propriedade border:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Evento debate acesso a testes genéticos e medicina de precisão</h1>
+        <p>Estima-se que 6% a 8% da população mundial de 7,8 bilhões de pessoas são afetadas por alguma doença genética, sendo que ao menos 4 entre 10 pacientes recebem um diagnóstico errado ao menos uma vez, complicando seus quadros clínicos. Por meio da Medicina Genética, dispõe-se de conhecimento para oferecer agilidade, personalização e precisão no diagnóstico e tratamento dos pacientes diagnosticados com estas doenças. Este contexto também se aplica para as chamadas síndromes hereditárias de câncer. Por sua vez, é um conhecimento que ainda não chegou a uma grande parcela dos profissionais de saúde e não é realidade para os pacientes no SUS.</p>
+    </div>
+</body>
+</html>
+
+*/ 
+
+
+div {
+    width: 600px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #454545;
+}
+
+p{
+    font-size: 24px;
+    text-align: center;
+}
+
+/*
+Utilize a propriedade border quando todas as bordas tiverem os mesmos valores. 
+Isso oferece as seguintes vantagens:
+código menor e mais fácil de manter
+conter todos os valores de borda em uma propriedade só
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Matrix está de volta</h1>
+        <img src="matrix4.jpg">
+        <p>Matrix chega a sua quarta versão, trazendo de volta o incrível Neo, interpretado pelo ator Keanu Reeves. A luta contra as máquinas ainda parece longe de acabar.</p>
+        <p>Nesse filme veremos como o personagem vai lidar com o que viveu no passado, encarando a prisão que é usada para escravizar os seres-humanos.</p>
+        <span>Estréia: Dezembro de 2021</span>
+    </div>
+</body>
+</html>
+*/ 
+
+body  {
+    background-color: #000000;
+}
+
+div {
+    width: 500px;
+    margin: 30px auto;
+}
+
+h1 {
+    font-family: Verdana;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+img {
+    width: 500px;
+    border: 5px solid #009200;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+span {
+    font-family: Verdana;
+    font-size: 18px;
+    color: #ffffff;
+    border-left: 3px solid #009200;
+    border-bottom: 3px solid #009200;
+} 
+
+/*
+As propriedades de borda são muito utilizadas quando precisamos definir 
+o contorno de elementos. Com elas podemos deixar a estilização mais agradável, 
+definindo as características da borda (largura, estilo e cor) de um elemento
+*/
+
+

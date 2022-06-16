@@ -1,0 +1,21 @@
+/*Consulta rápida:*/
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+/*Definindo que os controles no interior do container serão organizados com 
+display flex na forma de linhas (row) e com quebra de linha (wrap).*/
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 45%;
+}
+/*Definindo que os cards têm display flexível (flex), com seu conteúdo sendo 
+organizado na forma de colunas (column), com quebra de coluna (wrap), e 
+partindo de uma largura base de 45% do container.*/
+
+.card div{
+    flex-grow: 1;
+}
+/*Definindo que a div no interior do card deve ocupar todo o espaço disponível.*/

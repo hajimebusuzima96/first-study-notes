@@ -1,0 +1,268 @@
+/*
+Quando pensamos em posicionamento de elementos em páginas web, 
+a primeira coisa que vem em nossa cabeça são os eixos X e Y que 
+são os eixos horizontais e verticais, respectivamente.
+
+Todo elemento que tentamos posicionar na página web vamos movendo usando 
+esses dois eixos e assim conseguimos colocar ele onde queremos.
+
+A propriedade z-index trabalha com um eixo que não é muito conhecido e 
+tampouco usado pela maioria dos desenvolvedores, o eixo Z. O eixo Z é o 
+eixo responsável pelo cálculo e posicionamento da profundidade de algum elemento, 
+ou seja, é aquele que irá determinar se o elemento estará mais próximo ou mais afastado da tela.
+
+Basicamente, os eixos X, Y e Z funcionam da seguinte forma, imagine o cenário de um prédio:
+
+X=> Quantidade de metros da parte da frente do prédio;
+Z=> Quantidade de metros da porta da frente ao fundo do prédio;
+Y=> Altura do prédio;
+Agora chega de tentar entender na teoria como essa propriedade funciona 
+e vamos ver ela funcionando na prática:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Entendendo a propriedade z-index</title>
+  <style type="text/css">
+
+#posiciona1{
+background-color: #F00;
+width: 50px;
+height: 50px;
+position: absolute;
+}
+
+#posiciona2{
+background-color: #0F0;
+width: 50px;
+height: 50px;
+position: absolute;
+}
+
+#posiciona3{
+background-color: #00F;
+width: 50px;
+height: 50px;
+position: absolute;
+}
+
+</style>
+</head>
+<body>
+
+<div id="posiciona1"></div>
+<div id="posiciona2"></div>
+<div id="posiciona3"></div>
+
+</body>
+</html>
+
+
+Como podemos ver só está sendo exibido 1 box, que é o último (terceira div).
+Isso acontece porque os elementos vão recebendo automaticamente valores de z-index=1,
+z-index=2 e assim por diante. Nesse caso como o último box fica com o maior z-index,
+é ele quem aparece na frente.
+
+Para entender melhor, mude seu código css para o código abaixo:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Entendendo a propriedade z-index</title>
+  <style type="text/css">
+
+#posiciona1{
+background-color: #F00;
+width: 50px;
+height: 50px;
+position: absolute;
+top:0;
+}
+
+#posiciona2{
+background-color: #0F0;
+width: 50px;
+height: 50px;
+position: absolute;
+top:25px;
+}
+
+#posiciona3{
+background-color: #00F;
+width: 50px;
+height: 50px;
+position: absolute;
+top:50px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="posiciona1"></div>
+<div id="posiciona2"></div>
+<div id="posiciona3"></div>
+
+</body>
+</html>
+
+
+Agora vamos forçar com que o box verde fique na frente de todos os outros, 
+usando o z-index.
+
+Altere seu código css para o seguinte:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Entendendo a propriedade z-index</title>
+  <style type="text/css">
+
+#posiciona1{
+background-color: #F00;
+width: 50px;
+height: 50px;
+position: absolute;
+top:40px;
+
+}
+
+#posiciona2{
+background-color: #0F0;
+width: 50px;
+height: 50px;
+position: absolute;
+top:65px;
+z-index:4;
+}
+
+#posiciona3{
+background-color: #00F;
+width: 50px;
+height: 50px;
+position: absolute;
+top:100px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="posiciona1"></div>
+<div id="posiciona2"></div>
+<div id="posiciona3"></div>
+
+</body>
+</html>
+
+
+Com o código dessa forma, nosso box verde irá sobrepor todos os outros, 
+pois assumimos para ele o valor de z-index=4 o que é maior do que o z-index=3 
+do último elemento.
+
+
+Caso queira que o primeiro box(vermelho) seja o que fique frente, basta aplicar 
+um z-index maior nele, e assim por diante com qualquer elemento na página, como 
+mostra a listagem 4.
+
+Vamos também colocar um texto de demonstração nas div’s para vermos que nas div’s 
+que ficam “escondidas” o texto também acompanha o fundo e fica atrás do outro.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Entendendo a propriedade z-index</title>
+  <style type="text/css">
+
+#posiciona1{
+background-color: #F00;
+width: 300px;
+height: auto;
+position: absolute;
+top:40px;
+z-index:5;
+}
+
+#posiciona2{
+background-color: #0F0;
+width: 300px;
+height: auto;
+position: absolute;
+top:65px;
+z-index:4;
+}
+
+#posiciona3{
+background-color: #00F;
+width: 300px;
+height: auto;
+position: absolute;
+top:100px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="posiciona1">
+Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
+Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é
+amistosis quis leo.
+Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num
+significa nadis i pareci latim.
+Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+</div>
+<div id="posiciona2">
+Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui.
+Nullam leo erat, aliquet quis tempus a, posuere ut mi.
+Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper.
+Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis.
+Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+</div>
+<div id="posiciona3">
+Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis
+eleifend option
+congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+Lorem ipsum dolor sit amet, consectetuer
+Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da
+jamaikis, só num pode ser mijis.
+Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+suscipit lobortis nisl
+ut aliquip ex ea commodo consequat.
+</div>
+
+</body>
+</html> 
+
+
+
+
+Com isso eu encerro esse artigo, vimos como funciona a propriedade z-index e entendemos 
+também como utilizar o eixo Z do plano cartesiano.
+*/  
+
+
+
+
+
+
+
+
+
+
+
+

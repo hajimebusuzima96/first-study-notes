@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<h1>Lista de Contatos - DevMedia</h1>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Sexo</th>
+      <th>Telefone</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for pessoa in lista %}
+    <tr>
+      <td>{{ pessoa.nome }}</td>
+      <td>{{ pessoa.idade }}</td>
+      <td>{{ pessoa.sexo }}</td>
+      <td>{{ pessoa.telefone }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<a href="{% url "pessoa_new" %}">
+<button type="submit" class="btn btn-primary">
+    Cadastrar
+</button>
+</a>

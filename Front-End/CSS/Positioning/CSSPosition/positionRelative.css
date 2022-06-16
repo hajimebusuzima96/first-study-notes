@@ -1,0 +1,49 @@
+/*
+O valor relative de position põe o elemento em posicionamento relativo.
+
+Nesse modelo de posicionamento o elemento se move em relação a sua posição no fluxo normal.
+
+Sintaxe
+Para colocar um elemento em posicionamento relativo utilizamos a seguinte sintaxe:
+
+*/ 
+
+a{ 
+    position: relative;
+} 
+
+
+/*
+Quando o posicionamento é relativo utilizamos outras quatro propriedades para mover 
+o elemento, são elas:
+
+top
+bottom
+left
+right
+Essas são propriedades de deslocamento. Sendo assim, o elemento 
+estará mais distante do fundo da página quanto maior for o valor de bottom e assim por diante.
+
+Exemplo
+No Código 1 deslocamos o parágrafo 25 pixels para baixo e para a direita.
+
+*/ 
+
+
+p {
+    left: 25px;
+    position: relative;
+    top: 25px;
+} 
+
+/*Note que para isso usamos as propriedades de deslocamento top (topo) e left (esquerda). 
+Isso porque mover o objeto para baixo e para a direita é distanciá-lo do topo (top) e da
+esquerda (left).*/
+
+/*
+Usamos o modelo relativo de posicionamento com o valor relative da propriedade position. 
+Nesse modelo usamos as propriedades de deslocamento top, bottom, left e right para mover 
+o elemento
+*/
+
+

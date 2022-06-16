@@ -1,0 +1,124 @@
+/*
+Nessa aula veremos a propriedade border-radius que 
+serve para arredondar os cantos das bordas de um elemento.
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bordas No CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div id="teste">
+        <p>Elemento <span>div</span></p>
+    </div>
+</body>
+</html>
+*/
+ 
+
+div {
+    width: 200px;
+    padding: 5px;
+    border: 8px solid #000;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+} 
+
+/*
+Quando a propriedade border-radius tem um único valor,
+ele é usado para arredondar todos os quatro cantos do elemento
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seguros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>As vantagens de obter um seguro</h1>
+        <img src="seguros.jpg">
+        <p>Adquirir um seguro é fundamental para os dias de hoje, onde podemos ter imprevistos no dia a dia. Os seguros te dão segurança sobre quaisquer bens roubados/danificados. As vantagens que eles oferecem são:</p>
+        <ul>
+            <li>Proteção para você e sua família</li>
+            <li>Custo-benefício melhor</li>
+            <li>Comodidade e tranquilidade</li>
+        </ul>
+        <p>Se ficou com dúvidas e deseja mais informações, clique no link abaixo para saber mais sobre seguros.</p>
+        <a href="https://www.meusite.com.br/seguros/">Fale Conosco</a>
+    </div>
+</body>
+</html>
+
+As tags <ul> e <li> são utilizadas para a criação de listas. 
+Não se preocupe com elas agora pois serão abordadas no curso sobre tags HTML de lista.
+Neste momento o importante é você focar nas propriedades CSS que estão sendo abordadas
+
+*/
+
+body {
+    background-color: #b1b1b1;
+}
+
+div {
+    width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 40px 60px 60px 60px;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: Verdana;
+    background-color: #5ec330;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-left: 10px solid #212121;
+    border-radius: 0 25px 25px 0;
+}
+
+img {
+    width: 600px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Verdana;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+ul {
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+a {
+    font-size: 18px;
+    font-family: Verdana;
+    text-decoration: none;
+    background-color: #5ec330;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/*
+Um estilo muito usado com a propriedade border-radius é o 
+arredondamento das bordas de apenas um lado do elemento. 
+Essa estilização é utilizada em diversos elementos, especialmente
+títulos e subtítulos, o que pode melhorar a aparência do elemento na página
+*/
+
+

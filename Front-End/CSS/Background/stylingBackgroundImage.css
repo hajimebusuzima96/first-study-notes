@@ -1,0 +1,167 @@
+/*
+
+Ao utilizar a propriedade background-repeat para não repetir a 
+imagem ou então para repetir apenas em uma direção, podemos 
+preencher o espaço que a imagem não ocupa utilizando background-color
+*/
+
+body {
+    background-image: url('img/fundo-floresta.jpg');
+    background-repeat: no-repeat;
+    background-color: darkgreen;
+} 
+
+
+/*Veja  alguns exemplos de valores para background-position.*/
+
+background-position: top;
+background-position: center;
+background-position: bottom;
+background-position: right top;
+background-position: right center;
+background-position: right bottom;
+background-position: center top;
+background-position: center;
+background-position: center bottom; 
+
+
+/*Além desses valores a propriedade background-position 
+possui diversos outros valores, porém essas são as mais usadas*/
+
+/* Ocupa todo espaço do elemento e exibe parte da imagem se for necessário */
+background-size: cover;
+
+/* Estica a imagem ao máximo possível exibindo a imagem por completo */
+background-size: contain;
+
+/* Define o percentual de largura e altura com relação ao elemento, que a imagem vai ocupar */
+background-size: 50% 70%;
+
+/* Define a largura e altura da imagem em pixel */
+background-size: 300px 150px; 
+
+
+/*Isso é feito utilizando a propriedade background-attachment*/ 
+
+body {
+    background-image: url('img/fundo-floresta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+
+/*Veja o exemplo de uso da propriedade background.
+
+background: top right no-repeat #0f0 fixed url('img/fundo-floresta.jpg');
+
+
+
+
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Doutor estranho 2</title>
+  </head>
+  <body>
+    <div class="secao-topo">
+      <h1>Doutor estranho 2</h1>
+      <h2>no multiverso da loucura</h2>
+    </div>
+
+    <div class="secao-conteudo">
+      <h3>Informações sobre o filme</h3>
+      <p>Elenco: Benedict Cumberbatch, Chiwetel Ejiofor, Elizabeth Olsen</p>
+      <p>Direção: Sam Raimi</p>
+      <p>Roteiro: Michael Waldron, Scott Derrickson</p>
+      <p>Título original: Doctor Strange in the Multiverse of Madness</p>
+
+      <img src="img/elenco1.jpg" alt="Benedict Cumberbatch">
+      <img src="img/elenco2.jpg" alt="Chiwetel Ejiofor">
+      <img src="img/elenco3.jpg" alt="Elizabeth Olsen">
+    </div>
+
+    <div class="secao-divulgacao"></div>
+
+    <div class="secao-conteudo">
+      <h3>Sinopse</h3>
+      <p>Em Doutor Estranho no Multiverso da Loucura, após derrotar Dormammu e enfrentar Thanos nos eventos de Vingadores: Ultimato, o Mago Supremo, Stephen Strange (Benedict Cumberbatch), e seu parceiro Wong (Benedict Wong), continuam suas pesquisas sobre a Joia do Tempo. Mas um velho amigo que virou inimigo coloca um ponto final nos seus planos e faz com que Strange desencadeie um mal indescritível, o obrigando a enfrentar uma nova e poderosa ameaça. O longa se conecta com a série do Disney+ WandaVision e tem relação também com Loki. O longa pertence a fase 4 do MCU onde a realidade do universo pode entrar em colapso por causa do mesmo feitiço que trouxe os vilões do Teioso para o mundo dos Vingadores e o Mago Supremo precisará contar com a ajuda de Wanda (Elizabeth Olsen), que vive isolada desde os eventos de WandaVision.</p>
+      <p><span>Em breve nos cinemas</span></p>
+    </div>
+  </body>
+  </html>
+
+
+*/  
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .secao-topo {
+    background-image: url("img/capa.jpg");
+    background-attachment: fixed;
+    min-height: 600px;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1, h2 {
+    margin: 0 auto;
+    color: #fff;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  h1 {
+    background-color: #000;
+  }
+  
+  h2 {
+    background-color: #f00;
+  }
+  
+  .secao-conteudo {
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .secao-conteudo img {
+    width: 200px;
+    height: 250px;
+  }
+  
+  .secao-divulgacao {
+    background-image: url("img/img1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+  }
+  
+  p {
+    line-height: 26px;
+  }
+  
+  span{
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 25px;
+  } 
+
+
+
+/*A imagem de fundo é utilizada para decorar a página, ou seja, 
+complementar o seu conteúdo. Ao utilizar as propriedades que a
+estiliza nós melhoramos essa decoração e deixamos a página mais profissional.
+*/
+
+
+
+

@@ -1,0 +1,15 @@
+/*
+Anteriormente neste capítulo aprendemos que o CSS possui modelos de posicionamento 
+pré-definidos. Utilizando cada um deles, de acordo com as necessidades do layout, 
+posicionamos elementos na página.
+
+Neste curso estudaremos o quinto e último modelo, chamado flutuação.
+
+Flutuação (float)
+Nesse modelo de posicionamento o elemento sai do fluxo normal (Slide 1) e 
+é posicionado totalmente a esquerda ou à direita do contêiner que o contém. 
+A caixa do elemento que flutua se torna de nível de bloco, caso ainda não seja, 
+e cada outro elemento se ajusta ao redor dele.
+
+*/
+

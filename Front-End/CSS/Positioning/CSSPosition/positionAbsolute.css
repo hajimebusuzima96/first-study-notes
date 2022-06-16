@@ -1,0 +1,48 @@
+/*
+Um elemento em posicionamento absoluto é removido do fluxo normal. 
+Por isso ele não afeta ou é afetado pela posição dos demais elementos na página.
+
+Sintaxe
+Para posicionar um elemento dessa forma use essa sintaxe:
+
+
+*/
+
+p { 
+
+    position: absolute;
+
+} 
+
+/*
+Novamente, usamos as quatro propriedades de deslocamento para mover o elemento. 
+Relembrando, elas são:
+
+top
+bottom
+left
+right
+No caso do posicionamento absoluto, essas propriedades funcionam um pouco 
+diferente do que vimos anteriormente. Elas definem onde o elemento deve aparecer 
+em relação àquele que o contém.
+
+Exemplo
+o posicionamento absoluto para mover o h3 para o 
+topo e para a direita na página.
+*/ 
+
+h3 {
+    right: 0;
+    position: absolute;
+    top: 0;
+} 
+
+
+/*
+Perceba que ao definir que o elemento deve se deslocar zero pixel a partir do 
+topo e da direita do seu contêiner (a própria página) ele passa a ocupar 
+exatamente essa posição.
+
+No posicionamento absoluto o elemento é removido do fluxo normal e não afeta ou
+é afetado pela posição dos demais elementos.
+*/

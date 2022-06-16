@@ -1,0 +1,10 @@
+COMO EXECUTAR ESSE APLICATIVO
+
+1 - Extraia a pasta do projeto para uma pasta no seu computador
+2 - Abra a pasta extraída no terminal
+3 - Execute o comando 'npm install' (esse comando vai criar o aplicativo e instalar pra você as bibliotecas necessárias)
+4 - Execute o comando 'expo start'
+
+-------------------------------------------------------
+
+Neste aplicativo disponibilizamos o arquivo package.json. Ele possui todas as configurações necessárias para que o npm crie e instale as bibliotecas do aplicativo.

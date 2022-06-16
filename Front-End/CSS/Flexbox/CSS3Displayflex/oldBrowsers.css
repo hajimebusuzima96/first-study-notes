@@ -1,0 +1,35 @@
+/*
+Consulta rápida:*/
+.container{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+/*Código para que o display flex do container funcione em diversos navegadores, incluindo os mais antigos que requerem o uso de prefixos.*/
+
+.card{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+
+    flex-basis: 45%;
+}
+/*Código para que o display flex do card funcione em diversos navegadores, incluindo os mais antigos que requerem o uso de prefixos.*/
+
+@media (max-width: 727px){
+    .card{
+        flex-basis:100%;
+        margin: 15px 0;
+    }
+}
+/*Media query para que a página seja responsiva, adequando o tamanho dos cards para 100% da largura do container em telas menores.*/

@@ -1,0 +1,178 @@
+<!--
+Quando precisamos organizar itens utilizando o formato de linhas e colunas em uma 
+página HTML, a nossa melhor solução é o uso de tabelas.
+
+Neste curso você vai aprender a trabalhar com as seguintes tags:
+
+table
+tr
+td
+th
+thead
+tbody
+tfoot
+caption
+--> 
+
+<table>
+    <tr>
+        <td>Jogo</td>
+        <td>Ano</td>
+    </tr>
+    <tr>
+        <td>Quantum Break</td>
+        <td>2016</td>
+    </tr>
+    <tr>
+        <td>Gears 5</td>
+        <td>2019</td>
+    </tr>
+</table> 
+
+
+<!--
+Como vimos, essas quatro tags nos permitiram criar uma tabela funcional no HTML.
+--> 
+
+<table>
+    <tr>
+        <th>Música</th>
+        <th>Artista</th>
+    </tr>
+    <tr>
+        <td>First Date</td>
+        <td>Blink-182</td>
+    </tr>
+    <tr>
+        <td>Love you Want You</td>
+        <td>Lip B</td>
+    </tr>
+</table> 
+
+
+<!--
+Exemplo prático
+
+A utilização de tabelas pode ser útil, por exemplo, para exibir a 
+classificação de clubes em uma competição
+
+Veja uma tabela sendo utilizada para mostrar os 5 primeiros colocados 
+no Campeonato Brasileiro de futebol na Figura 2.
+
+-->
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Time</th>
+        <th>J</th>
+        <th>SG</th>
+        <th>PTS</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>30</td>
+        <td>22</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Internacional</td>
+        <td>30</td>
+        <td>20</td>
+        <td>56</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Atlético Mineiro</td>
+        <td>29</td>
+        <td>14</td>
+        <td>53</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Flamengo</td>
+        <td>29</td>
+        <td>11</td>
+        <td>52</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Palmeiras</td>
+        <td>29</td>
+        <td>17</td>
+        <td>51</td>
+    </tr>
+</table> 
+
+
+<!--
+As tags <thead>, <tbody> e <tfoot> são sempre renderizadas nas suas 
+respectivas posições, independente da ordem que foram escritas,
+porém, para fim de organização semântica e facilidade de leitura do 
+código é recomendado a escrita na ordem mostrada nos exemplos.
+-->
+
+<table>
+    <thead>
+        <tr>
+            <th>Música</th>
+            <th>Artista</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Date</td>
+            <td>Blink-182</td>
+        </tr>
+        <tr>
+            <td>American Idiot</td>
+            <td>Green Day</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Rock</td>
+            <td>Estados Unidos</td>
+        </tr>
+    </tfoot>
+</table> 
+
+
+<!--
+Se você chegou até aqui então já sabe como criar e organizar uma tabela em HTML,
+agora vamos descobrir como dar títulos a ela.
+
+Como vimos, através da tag <caption> podemos adicionar um título a nossa tabela.
+
+
+-->
+
+<table>
+    <caption>Tabela de músicas</caption>
+    <thead>
+        <tr>
+            <th>Música</th>
+            <th>Artista</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Date</td>
+            <td>Blink-182</td>
+        </tr>
+        <tr>
+            <td>American Idiot</td>
+            <td>Green Day</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Rock</td>
+            <td>Estados Unidos</td>
+        </tr>
+    </tfoot>
+</table> 
+
+

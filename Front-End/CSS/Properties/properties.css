@@ -1,0 +1,31 @@
+/*
+
+No curso de Introdução ao CSS vimos alguns conceitos introdutórios do 
+CSS que servem de base para o aprendizado nessa linguagem.
+
+Agora vamos abordar as propriedades no CSS e como elas alteram a
+aparência de um elemento. Vamos iniciar relembrando o conceito de propriedades
+
+
+<a href=”#contato”>Contato</a>
+
+*/
+
+a {
+    font-size: 18px;
+    color: white;
+    background-color: red;
+}
+
+/*
+
+cada propriedade altera um aspecto visual do elemento. 
+Enquanto uma propriedade altera o tamanho da fonte, temos
+outras que modificam as cores (do texto e de fundo) do elemento.
+
+
+As propriedades representam características dos elementos das páginas web. 
+Quando há uma propriedade com um valor definido, temos um estilo do elemento 
+sendo configurado, o que altera sua aparência na página
+*/
+

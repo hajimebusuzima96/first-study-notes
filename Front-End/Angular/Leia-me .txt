@@ -1,0 +1,11 @@
+********************************************************
+                 Documenta��o Offline
+********************************************************
+
+  Para ler essa documenta��o offline extraia o arquivo. 
+       Ap�s basta abrir a pasta da documenta��o e
+      executar o arquivo documentacao-angular.exe.
+
+                    Bons estudos.
+
+********************************************************

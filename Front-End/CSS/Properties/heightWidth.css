@@ -1,0 +1,174 @@
+/*
+No CSS temos duas propriedades que definem a área que um
+elemento ocupa na tela: height (altura) e width (largura).
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades de Tamanho</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Propriedades de Tamanho</h1>
+    </div>
+</body>
+</html>
+
+*/
+
+div {
+    height: 100px;
+    width: 400px;
+    background-color: #00FF00;
+} 
+
+/*
+As propriedades height e width podem ser usadas em qualquer elemento do HTML. 
+Veja como elas mudam a aparência de outros elementos:
+
+a seguir veremos as propriedades height e width aplicadas em uma imagem
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da pesquisa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <img src="homem-aranha.jpg"/>
+        <h1>Homem-Aranha é o herói mais querido dos fãs</h1>
+        <p>Pesquisa feita com mais de 3 mil entrevistados revelaram que o herói da Marvel é o preferido do mundo dos super-heróis com 48% da preferência do público. Logo atrás vem a dupla da DC, Super-Homem e Batman, com 23% e 12% do percentual dos votos respectivamente.</p>
+    </div>
+</body>
+</html>
+*/ 
+
+
+h1 {
+    font-size: 32px;
+    font-family: 'Arial';
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Arial';
+}
+
+img {
+    height: 375px;
+    width: 500px;
+} 
+
+
+/*vemos uma imagem que teve o seu tamanho definido com 500 pixels de largura e 375 pixels de altura.
+Ao utilizar height e width em uma imagem é importante ter atenção com as dimensões 
+(altura e largura) originais da imagem.
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da pesquisa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <img src="homem-aranha.jpg"/>
+        <h1>Homem-Aranha é o mais querido dos fãs</h1>
+        <p>Pesquisa feita com mais de 3 mil entrevistados revelou que o herói da Marvel é o preferido do mundo dos super-heróis com 48% da preferência do público. Logo atrás vem a dupla da DC, Super-Homem e Batman, com 23% e 12% do percentual dos votos respectivamente.</p>
+    </div>
+</body>
+</html> 
+
+*/  
+
+h1 {
+    font-size: 22px;
+    font-family: Verdana;
+}
+
+h2 {
+    font-size: 16px;
+    font-family: Verdana;
+    color: #9c9c9c;
+}
+
+img {
+    width: 500px;
+    height: 375px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Verdana;
+    width: 500px;
+}
+ 
+
+/*
+Também é possível definir apenas a largura ou a altura de uma imagem no CSS. 
+Essa é uma forma de deixar uma imagem proporcional, pois o outro valor não
+definido será ajustado automaticamente
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Tecnologias Front-End</h1>
+        <p>As tecnologias front-end são indispensáveis no desenvolvimento de páginas web. Abaixo vemos as linguagens mais usadas.</p>
+        <img src="html.png">
+        <img src="css.png">
+        <img src="javascript.png">
+        <p>Abaixo veja os links para cada uma delas:</p>
+        <a href="https://www.devmedia.com.br/html/">HTML</a>
+        <a href="https://www.devmedia.com.br/css/">CSS</a>
+        <a href="https://www.devmedia.com.br/javascript/">JavaScript</a>
+    </div>
+</body>
+</html>
+*/
+
+div {
+    width: 500px;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: Verdana;
+}
+
+img {
+    width: 150px;
+    height: 170px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+a {
+    font-size: 18px;
+    font-family: Verdana;
+    background-color: #006db8;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+As propriedades height e width são importantes pois com elas definimos o 
+espaço que um elemento ocupa na tela. Isso nos permite fazer ajustes na tela, 
+como por exemplo diminuir o tamanho de uma imagem que ocupa mais espaço do que deveria.
+Height e width são umas das propriedades mais usadas no CSS
+*/
+
+

@@ -1,0 +1,141 @@
+/*
+Uma coisa muito importante na hora de estilizar uma página web é saber
+alterar as cores de um elemento. Para isso, temos duas propriedades
+muito conhecidas no CSS que abordamos no curso anterior: color e background-color.
+
+
+Agora vamos abordar as propriedades, começando pela propriedade color
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades de cor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Propriedades de cor</h1>
+    <p>Temos duas propriedades muito utilizadas no CSS para manipular cores: color e background-color.</p>
+</body>
+</html>
+*/ 
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+} 
+
+
+/*
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades de cor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Guia de CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. Vem aprender CSS com a DevMedia. No link abaixo você confere mais sobre essa linguagem de estilo.</p>
+    <a href="https://www.devmedia.com.br/css/">Guia de CSS</a>
+</body>
+</html> 
+*/
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    font-size: 18px;
+    color: white;
+    background-color: green;
+}
+
+/*
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Tecnologias front-end</h1>
+    <h2>HTML, CSS e JavaScript estão em alta no mercado</h2>
+    <div>
+        <p>Para se tornar um desenvolvedor front-end você precisará conhecer as seguintes tecnologias: HTML, CSS e JavaScript. Com elas é possível construir aplicações web e atender a demanda que o mercado pede.</p>
+        <p>Abaixo você tem um plano de estudo com essas tecnologias, clique no link e conheça cada uma delas de maneira mais aprofundada.</p>
+        <a href="https://www.devmedia.com.br/programacao/front-end">Plano de estudo Front-End</a>
+    </div>
+</body>
+</html>
+*/ 
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+div {
+    background-color: #0000ff;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+a {
+    font-size: 18px;
+    color: #ffffff;
+} 
+
+/*
+a seguir veremos como mudar a cor de fundo da tag body, 
+que é a tag que contém todos os elementos que são visíveis na tela:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedade CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Background-color</h1>
+    <p>Utilizamos essa propriedade para alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. Para isso, basta atribuir a cor desejada à propriedade background-color, declarada dentro do seletor no qual ela deve ser aplicada.</p>
+</body>
+</html>
+*/ 
+
+body {
+    background-color: #1053ac;
+}
+
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+} 
+
+/*
+Trabalhar com cores é essencial para o desenvolvedor front-end. Vimos que no CSS temos duas formas para manipular cores de elementos. Uma delas é com a propriedade color, onde alteramos a cor dos textos e a outra forma é com a propriedade background-color, 
+que nos permite mudar a cor de fundo dos elementos.
+*/
+

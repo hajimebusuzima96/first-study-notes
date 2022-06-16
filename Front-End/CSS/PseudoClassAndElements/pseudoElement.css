@@ -1,0 +1,140 @@
+article::first-letter {
+    font-size: 32px;
+}
+
+/* Ao declarar um pseudo-elemento, é possível fazer utilizando duas sintaxes: */
+article:first-letter {
+ /* //Utilizando 1 sinal de : (dois pontos) */
+}
+/* ou */
+article::first-letter {
+ /* //Utilizando 2 sinais de :: (dois pontos) */
+}
+/* A melhor forma de escrever é utilizando dois pontos (::) para ficar mais fácil diferenciar uma pseudo-classe de um pseudo-elemento.
+
+*/
+
+article::first-line {
+    background: yellow;
+  }
+
+/*
+Pseudo-elementos são usados para estilizar parte de elementos de maneira 
+simples e com um código limpo. Através de first-letter e first-line é possível 
+deixar os textos com visual mais interessante sem a necessidade de fazer alterações 
+na estrutura HTML.
+
+As imagens e o código de apoio utilizado nos flows acima podem ser baixados no botão baixar código no final desta aula.
+
+Exemplo prático
+Agora que você já conhece os pseudo-elementos first-letter e first-line
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <header>
+        <span class="titulo-logo">Poemas</span>
+    </header>
+    <h1>Soneto do amigo</h1>
+    <div>
+        <img src="img/amigo.png">
+    </div>
+    <article>
+        <section>
+            <p>Enfim, depois de tanto erro passado<br>Tantas retaliações, tanto perigo<br>Eis que ressurge noutro o velho amigo<br>Nunca perdido, sempre reencontrado.</p>
+        </section>
+        <section>
+            <p>É bom sentá-lo novamente ao lado<br>Com olhos que contêm o olhar antigo<br>Sempre comigo um pouco atribulado<br>E como sempre singular comigo.</p>
+        </section>
+        <section>
+            <p>Um bicho igual a mim, simples e humano<br>Sabendo se mover e comover<br>E a disfarçar com o meu próprio engano.</p>
+        </section>
+        <section>
+            <p>O amigo: um ser que a vida não explica<br>Que só se vai ao ver outro nascer<br>E o espelho de minha alma multiplica...</p>
+            <span>Vinicius de Moraes</span>
+        </section>
+    </article>
+    <footer>
+        Copyright 2022 © - Poemas™
+    </footer>
+</body>
+</html> 
+
+*/ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0ea6ed;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.titulo-logo {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 25px 0 0px 0;
+    text-align: center;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+
+article {
+    text-align: center;
+}
+
+section {
+    max-width: 950px;
+    margin: 32px auto;
+}
+
+p::first-letter {
+    font-size: 24px;
+}
+
+section::first-line {
+    font-style: italic;
+}
+
+p {
+    line-height: 32px;
+}
+
+/*
+O uso de pseudo-elementos para alterar partes de um texto permite ao 
+desenvolvedor estilizar partes de um texto sem a necessidade de alterar 
+o código HTML da página.
+*/
+
+
+
+
+

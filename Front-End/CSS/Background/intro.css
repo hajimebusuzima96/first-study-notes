@@ -1,0 +1,138 @@
+/*
+É muito comum alterarmos o fundo de um elemento com uma cor ou inserindo uma 
+imagem para que ele tenha um maior destaque na página.
+
+Veja no flow a seguir como isso é feito:
+
+Além de inserir a imagem no fundo da página,
+também é comum que ela seja inserida em boxes, cards e seções
+
+É muito comum usarmos as propriedades de background para estilizar uma página. 
+Através de background conseguimos, por exemplo, criar seções diferentes, dar 
+mais destaque a um determinado elemento, criar cards etc.
+
+*/
+body{
+
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+  }
+
+  div{
+    width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+/*
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>background-color</title>
+  </head>
+  <body>
+    <div>
+      <h1>Cão</h1>
+      <img src="./img/img-cachorro.jpg" alt="cachorro">
+      <p>O cão, no Brasil também chamado de cachorro, é um mamífero carnívoro da família dos canídeos, subespécie do lobo, e talvez o mais antigo animal domesticado pelo ser humano.</p>
+    </div>
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>HBO - Senhor dos anéis</title>
+  </head>
+  <body>
+    <div class="topo">
+      <h1>HBO Max</h1>
+    </div>
+
+    <div class="conteudo">
+      <h2>O senhor dos anéis - os anéis de poder</h2>
+      <img src="img/capa.jpg" alt="capa">
+
+      <p>Os Anéis de Poder, eram artefatos mágicos na obra de J.R.R.Tolkien na série O Senhor dos Anéis. </p>
+
+      <p> Os Anéis do poder foram os anéis mágicos feitos pelos Elfos durante a Segunda Era para que pudessem se curar, construir e compreender. Os Três, os maiores dentre os Anéis Élficos, foram forjados pelo ferreiro élfico Celebrimbor.</p>
+
+      <span class="texto-destaque">Em breve na HBO</span>
+    </div>
+
+  </body>
+  </html>
+*/  
+
+body {
+    margin: 0;
+    background-color: #250553;
+  }
+
+  .topo {
+    background-color: #02021c;
+    /* height: 50px; */
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .conteudo {
+    color: #cfcfcf;
+    padding: 20px 80px;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+  }
+  img {
+    height: 400px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .texto-destaque {
+    background-color: #b535f6;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+  }
+
+
+/*
+Uma forma de diferenciar as seções da página é através da propriedade background-color. 
+Por exemplo, utilizamos background-color para deixar o topo da página diferente das demais
+seções, dessa forma o usuário apenas olhando para a página vai conseguir entender que se
+trata de uma seção independente.
+*/
+
+
+
+

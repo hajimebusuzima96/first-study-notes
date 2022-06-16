@@ -1,0 +1,7 @@
+Para executar os aplicativos das aulas basta acessar a sua pasta e executar o comando abaixo:
+
+npm install
+
+Dessa forma o aplicativo será criado e você poderá testá-lo executando o comando abaixo:
+
+expo start

@@ -1,0 +1,416 @@
+<!--
+Quando começamos a criar uma página HTML a primeira coisa que fazemos 
+é definir o conteúdo de cabeçalho, como título e meta tags.
+
+Neste curso você aprenderá a trabalhar com as seguintes tags:
+
+title
+meta (description, charset, viewport, robots)
+link
+style
+
+-->
+
+<!--
+Para definir o título de uma página precisamos definir a tag 
+<title> dentro do cabeçalho HTML e é isso que vamos aprender nessa aula.
+
+Como vimos, o uso da tag titleexibe o título Minha Página definido no cabeçalho no navegador.
+
+--> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Minha Página</title>
+</head>
+<body>
+
+</body>
+</html> 
+
+<!--
+Caso os caracteres com acento na sua página não estejam aparecendo não se preocupe, 
+na aula meta tag charset você vai aprender como resolver isso.
+
+Exemplo prático
+A tag title é muito útil para identificar onde o usuário está na página.
+Veja nesse exemplo da Figura 2 como a página identifica que o usuário está em um Curso de HTML.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curso de HTML</title>
+</head>
+<body>
+    <h1>Introdução</h1>
+    <div>
+        <p>
+            Bem-vindo ao curso de HTML, aqui você vai aprender tudo sobre HTML, do básico ao avançado.
+        </p>
+    </div>
+</body>
+</html> 
+
+
+<!--
+Para definir a descrição de uma página precisamos utilizar a tag 
+<meta name=”description”> dentro do cabeçalho HTML
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curso de HTML</title>
+    <meta name="description" content="Este é o curso de HTML onde você vai aprender tudo do básico ao avançado">
+</head>
+<body>
+
+</body>
+</html> 
+
+<!--
+Exemplo prático
+A meta tag description é utilizada por buscadores na hora de exibir o
+resultado da busca. Veja nesse exemplo da Figura 2 como o buscador exibe 
+a description no seu resultado.
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DevMedia | Plataforma para Programadores</title>
+        <meta name="description" content="São milhares de Cursos, DevCasts, Códigos e Artigos sobre Java, JavaScript, PHP, Delphi, Banco de dados, HTML, CSS, C#, C++, Python e .NET. Acesse agora!" />
+    </head>
+    <body>
+
+    </body>
+</html> 
+
+
+<!--
+Para definir o charset da página precisamos utilizar a 
+tag <meta charset=”código do charset”> dentro do cabeçalho 
+HTML e é isso que vamos aprender nessa aula.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Página do curso de HTML</title>
+    </head>
+    <body>
+        <h1>Introdução</h1>
+        <p>Este é o curso de HTML</p>
+    </body>
+</html> 
+
+<!--
+Em alguns casos essa codificação é implícita no arquivo, 
+com isso os caracteres da página não vão quebrar mesmo que
+a meta charset não for utilizada. Porém é recomendado 
+que você sempre utilize essa meta tag.
+Exemplo prático
+
+A tag charset é utilizada para definir o conjunto de 
+caracteres de uma página, e por vezes resolve problemas 
+como a exibição incorreta de caracteres. Veja nesse exemplo 
+da Figura 2 como a tag charset corrige a exibição de caracteres acentuados.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Certificado de conclusão</title>
+    </head>
+    <body>
+        <h1>Conclusão de curso</h1>
+        <p>Você completou o curso de HTML</p>
+    </body>
+</html> 
+
+
+<!--
+Para definir se uma página deve ou não ser exibida em um buscador, 
+precisamos utilizar a tag <meta name=”robots”> dentro do cabeçalho HTML
+--> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comentários em aberto - DevMedia</title>
+         <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <h1>Relatórios de comentários em aberto</h1>
+        <p>Aqui entra o conteúdo do relatório</p>
+    </body>
+</html> 
+
+
+<!--
+Nofollow
+Além do noindex, existe também um outro tipo de uso para a tag robots, o nofollow.
+--> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Área de comentários</title>
+        <meta name="robots" content="nofollow" />
+    </head>
+    <body>
+        <h1>Área de comentários</h1>
+        <p>Aqui são exibidos todos os comentários</p>
+    </body>
+</html> 
+
+<!--
+Noindex, Nofollow
+Legal, já sabemos utilizar o noindex e o nofollow e qual a utilidade de cada um. 
+Mas e se a gente precisar usar os dois ao mesmo tempo? Acompanhe o flow a seguir:
+-->
+
+<!--
+Exemplo prático
+Quando temos uma página administrativa, como um relatório de 
+comentários, ou relatório financeiro, não queremos que essas 
+páginas apareçam em resultados de busca, e por isso utilizamos a meta tag robots.
+
+Veja na Figura 2 um exemplo de página administrativa que utiliza noindex e nofollow.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Relatório financeiro" />
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex, nofollow"/>
+        <title>Relatório financeiro</title>
+    </head>
+    <body>
+        <h1>Relatório financeiro</h1>
+        <div>
+            <p>
+            Dados financeiros do segundo trimestre fiscal de 2021
+            </p>
+            <p>
+                As planilhas podem ser acessadas pelo <a href="https://www.office.com">office online</a>
+            </p>
+            <p>
+                Acesse outros dados do relatório no <a href="https://www.meusite.com/relatorimportante/">nosso sistema interno</a>
+            </p>
+        </div>
+    </body>
+</html> 
+
+<!--
+Para configurar a exibição correta da página em múltiplos tamanhos de tela, precisamos 
+utilizar a tag <meta name=”viewport”> dentro do cabeçalho HTML e é isso que vamos aprender 
+nessa aula.
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Comentários" />
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comentários</title>
+    </head>
+    <body>
+        <h1>Comentários</h1>
+        <div>
+            <p>
+                Venha conhecer meu site. É bem legal. <a href="https://www.meusite.com.br">https://www.meusite.com.br</a>
+            </p>
+        </div>
+    </body>
+</html> 
+
+
+<!--
+Exemplo prático
+
+No nosso exemplo prático vamos ver a diferença entre uma página HTML 
+renderizada com e sem o uso da meta tag viewport, mostrando como o uso 
+dessa tag pode alterar significativamente a renderização da página.
+
+Veja na Figura 2 um exemplo comparativo do uso da viewport.
+--> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Comentários" />
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fórum</title>
+    </head>
+    <body>
+        <h1>Fórum</h1>
+
+        <h3>If/else vs Switch/Case</h3>
+
+        <div>
+            <b>Marcos: </b><p>Depende de cada caso, eu uso os dois</p>
+        </div>
+        <div>
+            <b>Augusto: </b><p>Não sei, o Switch / case parece mais organizado pra mim.</p>
+        </div>
+        <div>
+            <b>Camila: </b><p>Eu prefiro if/else, é mais simples e serve na maioria das situações</p>
+        </div>
+    </body>
+</html> 
+
+
+<!--
+HTML e CSS
+Já entendemos o que é e pra que serve o CSS. Agora vamos ver como HTML e CSS se comunicam.
+--> 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tech News - Notí­cias do dia</title>
+</head>
+<body>
+    <h1>Tech News</h1>
+
+    <h3>Notí­cias do dia</h3>
+
+    <div>
+        <p>Visual Studio recebe uma atualização</p>
+        <p>Unity 2020 beta. Confira as novidades!</p>
+        <p>Unreal Engine 5 sai esse ano e promete gráficos incrí­veis.</p>
+    </div>
+</body>
+</html> 
+
+
+<!--
+<link>
+Agora sabemos o que é o CSS e como ele interage com os elementos HTML, 
+chegou a hora de associar o arquivo CSS ao nosso documento HTML através
+ da tag <link>. Acompanhe no flow a seguir como isso é feito:
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fórum" />
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Fórum</title>
+    </head>
+    <body>
+        <h1>Fórum</h1>
+
+        <h3>If/else vs Switch/Case</h3>
+
+        <div>
+            <b>Marcos: </b><p>Depende de cada caso, eu uso os dois</p>
+        </div>
+        <div>
+            <b>Augusto: </b><p>Não sei, o Switch / case parece mais organizado pra mim.</p>
+        </div>
+        <div>
+            <b>Camila: </b><p>Eu prefiro if/else, é mais simples e serve na maioria das situações</p>
+        </div>
+    </body>
+</html> 
+
+
+<!--
+<style>
+Agora que vimos como adicionar um arquivo CSS externo a página HTML, vamos ver como adicionar um 
+código CSS diretamente ao documento.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fórum" />
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                background: #b8b8b8;
+            }
+        </style>
+        <title>Fórum</title>
+    </head>
+    <body>
+        <h1>Fórum</h1>
+
+        <h3>If/else vs Switch/Case</h3>
+
+        <div>
+            <b>Marcos: </b><p>Depende de cada caso, eu uso os dois</p>
+        </div>
+        <div>
+            <b>Augusto: </b><p>Não sei, o Switch / case parece mais organizado pra mim.</p>
+        </div>
+        <div>
+            <b>Camila: </b><p>Eu prefiro if/else, é mais simples e serve na maioria das situações</p>
+        </div>
+    </body>
+</html> 
+
+<!--
+Exemplo prático
+Agora que vimos as duas formas de uso, confira um exemplo prático de uma página estilizada com 
+CSS através do uso da tag <style>, como mostra a Figura 1.
+--> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Lançamento de Jogos" />
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1 {
+                color:#02af3b;
+            }
+            h3 {
+                color: #ff7300;
+            }
+            div {
+                background: #6694eb;
+            }
+        </style>
+        <title>Lançamentos</title>
+    </head>
+    <body>
+        <h1>Jogos</h1>
+
+        <h3>Lançamentos de jogos 2021</h3>
+
+        <div>
+            <p>The Medium</p>
+            <p>Yakuza 3</p>
+            <p>Yakuza 4</p>
+            <p>Yakuza 5</p>
+            <p>MLB The Show 21</p>
+        </div>
+    </body>
+</html> 
+
+

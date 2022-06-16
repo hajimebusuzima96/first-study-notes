@@ -1,0 +1,61 @@
+/*
+
+Agora que vimos como é a sintaxe de um código CSS e como é importante implementá-la corretamente, 
+veremos como o código CSS é usado em uma página HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <style>
+        h1 {
+            font-size: 48px;
+            color: blue;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado.</p>
+</body>
+</html>
+
+Cada propriedade no CSS nos permite alterar uma característica de um elemento no HTML. 
+Podemos ver na Figura 1 a propriedade font-size, que altera o tamanho da fonte de um 
+elemento de texto.
+
+
+
+
+No Código 2 temos o código que foi utilizado.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+
+    <style>
+        h1 {
+            font-size: 48px;
+            color: blue;
+        }
+
+        p {
+            font-size: 20px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado.</p>
+</body>
+</html>
+*/

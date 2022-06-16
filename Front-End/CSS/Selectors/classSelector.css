@@ -1,0 +1,142 @@
+/*
+Vimos na aula anterior sobre o seletor de tag, 
+que é responsável por definir estilos globais para elementos iguais em uma página.
+
+Agora veremos o seletor de classe, que permite definir estilos específicos na página:
+
+
+A palavra class utilizada na tag de abertura do elemento span é chamada de atributo no HTML.
+
+*/  
+
+
+.texto-destaque  {
+    color: #ff2200;
+} 
+
+
+/*
+A palavra class utilizada na tag de abertura do elemento span é chamada de atributo no HTML.
+*/ 
+
+div {
+    width: 500px;
+    margin: 40px auto;
+}
+
+p {
+    font-size: 24px;
+    font-family: Tahoma;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+.texto-destaque {
+    color: #ff2200;
+    font-weight: normal;
+} 
+
+
+div {
+    width: 500px;
+    margin: 40px auto;
+}
+
+p {
+    font-size: 24px;
+    font-family: Tahoma;
+    text-align: justify;
+}
+
+.texto-negrito {
+    font-weight: bold;
+}
+
+.texto-vermelho {
+    color: #ff2200;
+}
+
+/*
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tattoaria Skull</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <img class="imagem-logotipo" src="img/logo.png">
+        <h1>Muito mais que um simples estúdio de tatuagem</h1>
+        <h2>Viemos para reinventar, criar experiências únicas e aproximar pessoas de grandes artistas!</h2>
+    </div>
+    <div>
+        <img src="img/banner.jpg">
+        <p>Estamos há mais de <span class="texto-negrito">20 anos</span> fazendo tatuagens dos mais diversos tipos. Nossos serviços são reconhecidos por toda a comunidade. São mais de <span class="texto-negrito">300 tatuagens diárias</span> feitas no nosso estúdio. Nossos profissionais são extremamente zelosos pelo trabalho e estão sem dispostos a oferecer o melhor resultado possível aos nossos clientes. Nosso <span class="texto-vermelho">comprometimento com a clientela</span> é nossa prioridade máxima.</p>
+    </div>
+    <div>
+        <p>Nos siga nas redes sociais</p>
+        <p>
+            <a href="https://www.facebook.com/">
+                <img class="imagem-rede-social" src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="imagem-rede-social" src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/">
+                <img class="imagem-rede-social" src="img/twitter.png" alt="Twitter">
+            </a>
+        </p>
+    </div>
+</body>
+</html>
+*/ 
+
+div {
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
+    line-height: 28px;
+}
+
+h1 {
+    font-size: 21px;
+}
+
+h2 {
+    color: #757575;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagem-logotipo {
+    width: 150px;
+}
+
+.texto-negrito {
+    font-weight: bold;
+}
+
+.texto-vermelho {
+    color: #ff2200;
+}
+
+.imagem-rede-social {
+    width: 40px;
+} 
+
+
+/*
+Os estilos criados com seletores de classe sempre vão sobrescrever
+os estilos criados com seletores de tag. Os seletores de classe 
+aplicam estilos mais específicos, enquanto os seletores de tag aplicam estilos mais globais.
+*/
+

@@ -1,0 +1,132 @@
+/*
+Veja no Código 1 o trecho de código HTML , 
+que demonstra o uso de uma classe em elementos diferentes.
+
+
+<div>
+    <h1>Switch é console mais vendido da história da Nintendo</h1>
+    <h2 class="texto-azul">De forma oficial a Nintendo revelou que o Switch quebrou recordes de venda, ultrapassando o Wii</h2>
+    <p>Agora é oficial: o <span class="texto-negrito">Switch</span> é o console mais vendido da Nintendo de todos os tempos. O video game ultrapassou o <span class="texto-negrito">Wii</span>, que até então estava no topo da lista. A informação foi revelada pela Nintendo, em um relatório financeiro divulgado. De acordo com o documento, o Switch vendeu 103,54 milhões de unidades até o dia 31 de dezembro de 2021, ficando acima dos 101, 63 milhões do <span class="texto-azul">saudoso Wii</span>.</p>
+</div>
+
+É uma prática muito comum reaproveitar estilos para elementos específicos.
+Um exemplo é criar uma classe para estilizar um botão. Na página, podemos
+usar essa classe em todos os elementos que queremos deixar com a aparência de um botão. 
+
+<span class="texto-negrito texto-verde">TV Asahi</span>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de idiomas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="secao-topo">
+        <img class="img-logotipo" src="img/logo.png">
+        <h1>Um novo jeito de aprender idiomas</h1>
+        <h2 class="texto-azul">Somos comprometidos com a qualidade de ensino para te ajudar nesse desafio</h2>
+    </div>
+
+    <div class="secao-idioma secao-azul">
+        <img src="img/ingles.jpg" class="img-bandeira-idioma" alt="inglês">
+        <h3>Inglês</h3>
+        <p>O inglês é o idioma mais falado no mundo! é imprescindível ter esse idioma no seus conhecimentos.</p>
+    </div>
+    <div class="secao-idioma">
+        <img src="img/espanhol.jpg" class="img-bandeira-idioma" alt="espanhol">
+        <h3>Espanhol</h3>
+        <p>O Brasil é cercado por países falantes da língua espanhola, o que mostra a importância desse idioma.</p>
+    </div>
+    <div class="secao-idioma secao-azul">
+        <img src="img/frances.jpg" class="img-bandeira-idioma" alt="francês">
+        <h3>Francês</h3>
+        <p>O número de vaga pedindo francês têm aumentado consideravelmente no mercado de trabalho.</p>
+    </div>
+    <div class="secao-rodape">
+        <p class="texto-azul">"Quem investe o seu tempo aprendendo um novo idioma está abrindo portas para o futuro."</p>
+    </div>
+</body>
+</html>
+
+
+*/
+ 
+body {
+    font-family: Tahoma;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.secao-topo {
+    margin: 0 auto;
+    background: #dfdfdf;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.img-logotipo {
+    width: 150px;
+    background-color: #fff;
+}
+
+.secao-idioma {
+    width: 650px;
+    margin: 20px auto 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.secao-azul {
+    background-color: #0291dd;
+    color: #fff;
+}
+
+.secao-rodape {
+    width: 350px;
+    margin: 15px auto 0;
+}
+
+.texto-azul {
+    color: #0291dd;
+}
+
+.img-bandeira-idioma {
+    width: 30px;
+} 
+
+/*
+Reaproveitar classes é muito vantajoso na hora de estilizar as páginas web,
+pois evitamos a replicação de código e deixamos o CSS mais fácil de manter. 
+O reaproveitamento de classes é uma prática muito utilizada no desenvolvimento front-end.
+*/
+
+

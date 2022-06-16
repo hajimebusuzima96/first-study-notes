@@ -1,0 +1,33 @@
+/*
+Os níveis de caixa
+Por que isso é útil?
+Revisando o capítulo anterior, aprendemos a diferença entre block e inline:
+
+Block
+O elemento sempre vai se iniciar em uma nova linha e ocupa todo o espaço horizontal disponível.
+
+Inline
+O elemento nunca se inicia em uma nova linha e ocupa apenas o espaço necessário para apresentar o conteúdo dele.
+
+A caixa que envolve um elemento pode ser de um dos seguintes grupos:
+
+Bloco
+Linha
+
+Os elementos de nível de bloco são a ferramenta mais básica para mover a posição de um grupo de elementos. Portanto, identificar quais elementos são de bloco ou linha é a primeira habilidade que precisamos desenvolver.
+
+Níveis das caixas
+A caixa que envolve um elemento pode ser de um dos seguintes níveis:
+
+Bloco (block)
+Linha (inline)
+Quando o valor da propriedade display de um elemento for block a caixa que envolve
+ele será de nível de bloco. As caixas de nível bloco sempre se iniciam em uma nova
+linha e por padrão ocupam todo o espaço horizontal disponível.
+
+Os elementos de linha, que possuem o valor da propriedade display configurado como inline, 
+possuem caixa de linha. As caixas de linha se adaptam ao fluxo de texto que as envolve.
+
+
+
+*/

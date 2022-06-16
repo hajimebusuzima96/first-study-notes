@@ -1,0 +1,214 @@
+<!--
+
+HTML (Hyper Text Markup Language) é a linguagem que usamos para estruturar 
+as páginas web de um site.
+
+Escrevemos código HTML utilizando tags, como <h1></h1> ou <p></p>, 
+e dentro delas adicionamos o conteúdo que desejamos que o navegador 
+exiba para quem estiver acessando a página web.
+
+O papel das tags é estruturar a informação contida em uma página web, 
+descrevendo para o navegador o que é um texto, um título, um botão, etc.
+O texto entre os símbolos menor que < e maior que > é chamado elemento e 
+grande parte deles será composto por duas tags: uma de abertura e uma de 
+fechamento. As tags de fechamento possuem uma barra após o símbolo menor que.
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapeuzinho Vermelho - Conto dos irmãos Grimm</title>
+    </head>
+    <body>
+        <h1>Chapeuzinho Vermelho</h1>
+
+        <p>Houve, uma vez uma graciosa menina; quem a via ficava logo gostando dela, 
+        assim como ela gostava de todos; particularmente, amava a avozinha, 
+        que não sabia o que dar e o que fazer pela netinha. 
+        Certa vez, presenteou-a com um chapeuzinho de veludo vermelho e, 
+        porque lhe ficava muito bem, a menina não mais quis usar outro e acabou 
+        ficando com o apelido de Chapeuzinho Vermelho. Um dia, a mãe chamou-a e disse-lhe:</p>
+
+        <blockquote>- Vem cá, Chapeuzinho Vermelho; aqui tens um pedaço de bolo e 
+        uma garrafa de vinho; leva tudo para a vovó; ela está doente e fraca e 
+        com isso se restabelecerá. Põe-te a caminho antes que o sol esquente muito e, 
+        quando fores, comporta-te direito; não saias do caminho, 
+        senão cais e quebras a garrafa e a vovó ficará sem nada. 
+        Quando entrares em seu quarto, não esqueças de dizer "bom-dia, vovó," 
+        ao invés de mexericar pelos cantos.</blockquote>
+    </body> 
+
+
+
+<!--
+Escrevemos o HTML em um arquivo com a extensão .html, comumente chamado documento HTML. 
+Esse documento, quando corretamente lido pelo navegador dá origem uma página web, com a
+ qual o usuário pode interagir.
+
+Por dentro da estrutura do HTML
+Uma vez que o documento será lido e interpretado pelo navegador, 
+devemos escrevê-los observando certas regras.
+
+Vejamos um exemplo de documento para conhecê-las.
+--> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chapeuzinho Vermelho - Conto dos irmãos Grimm</title>
+    </head>
+    <body>
+        <h1>Chapeuzinho Vermelho</h1>
+
+        <p>Houve, uma vez uma graciosa menina; quem a via ficava logo gostando dela, 
+        assim como ela gostava de todos; particularmente, amava a avozinha, 
+        que não sabia o que dar e o que fazer pela netinha. 
+        Certa vez, presenteou-a com um chapeuzinho de veludo vermelho e, 
+        porque lhe ficava muito bem, a menina não mais quis usar outro e acabou 
+        ficando com o apelido de Chapeuzinho Vermelho. Um dia, a mãe chamou-a e disse-lhe:</p>
+
+        <blockquote>- Vem cá, Chapeuzinho Vermelho; aqui tens um pedaço de bolo e 
+        uma garrafa de vinho; leva tudo para a vovó; ela está doente e fraca e 
+        com isso se restabelecerá. Põe-te a caminho antes que o sol esquente muito e, 
+        quando fores, comporta-te direito; não saias do caminho, 
+        senão cais e quebras a garrafa e a vovó ficará sem nada. 
+        Quando entrares em seu quarto, não esqueças de dizer "bom-dia, vovó," 
+        ao invés de mexericar pelos cantos.</blockquote>
+    </body>
+</html> 
+
+<!--
+Explorando esse documento
+DOCTYPE
+DOCTYPE é uma instrução sobre qual a versão do HTML que vai ser renderizada, 
+nesse caso <!DOCTYPE html> representa o HTML versão 5. Essa declaração deve 
+ser a primeira linha do arquivo HTML.
+
+html
+É dentro dessa tag que todas as demais serão escritas. 
+A única coisa que pode ficar fora dessa tag é a declaração DOCTYPE.
+
+Um documento HTML deve ser escrito e estruturado em duas grandes seções: head e body.
+
+head
+É aqui que adicionamos tags com informações importantes sobre o
+documento, tais como o seu título, descrição, codificação de caracteres, entre outras.
+
+Nesse exemplo, utilizamos as tags meta e title.
+
+meta
+Meta informa para o navegador qual codificação de caracteres 
+utilizamos quando o documento foi escrito, algo importante para que um 
+"�" não apareça no lugar de outros caracteres, como letras acentuadas, por exemplo.
+
+A codificação de caracteres você encontra no rodapé do seu editor 
+de códigos, mas ela também depende do servidor onde a página web 
+será hospedada, que geralmente vai usar UTF-8.
+
+Objeto real
+title
+Também adicionamos em head o título da página web, utilizando title.
+
+Objeto real
+body
+É o corpo da página web, onde todo o conteúdo que será apresentado para o usuário estará.
+
+Essa, com certeza, é a maior parte do documento.
+
+Aqui usamos três elementos para estruturar o conteúdo da página web: h1, p, blockquote.
+
+h1
+A maioria das páginas web terá um H1, que representa um título, 
+geralmente escrito em letra maior. Existem seis formas de criar 
+um título no HTML, começando com H1 até H6, o tamanho da letra vai ficando cada vez menor.
+
+p
+Um p é um parágrafo de um texto.
+
+blockquote
+É uma citação no texto.
+
+Esse é apenas um exemplo de documento.
+
+
+
+Vimos anteriormente que um elemento é um nome entre os sinais maior que > e menor que <.
+
+Por exemplo, o elemento body se escreve <body> e o elemento p se escreve <p>.
+
+Elementos escritos com pares de tags
+Alguns elementos se escrevem com pares de tags, sendo uma de abertura e a outra de fechamento.
+
+Esse é o tipo mais comum de tag utilizado.
+
+Ao escrever essas tags é necessário abrí-las e fechá-las, dessa forma:
+
+--> 
+
+<body>
+    <h1>Chapeuzinho Vermelho</h1>
+    ...
+</body> 
+
+<!--
+A primeira tag do par, <body>, se chama tag de abertura e a outra, </body>, 
+se chama tag de fechamento.
+
+É o par, <body> e </body>, que juntas formam o elemento body.
+
+É a barra que informa ao navegador onde a tag body termina.
+Os elementos escritos com pares de tags podem conter outros elementos. 
+Isso se chama nesting, aninhamento em tradução livre:
+
+-->
+
+<body>
+    <p>       
+        Ipsum Dolor Sit Amet
+        Vestibulum vulputate, metus quis consequat tincidunt,
+    </p>
+</body> 
+
+<!--
+Uma vez que estudamos os elementos que se escrevem com um par de tags, 
+você deve estar pensando: “algum elemento se escreve com uma única tag”? Sim!
+
+Esses elementos não possuem nesting e obtém seus conteúdos de uma outra forma.
+
+Elementos que se escrevem com uma única tag
+Um exemplo é img.
+
+Escrever <img></img> é errado, o correto é escrever <img>.
+
+Geralmente, esses elementos se baseiam mais em atributos para dar 
+informações sobre o seu conteúdo. Como vimos, um atributo possui nome e valor.
+
+Por exemplo, img possui o atributo src, que aponta para o local de onde o seu conteúdo será obtido.
+
+-->
+
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Objeto real">
+
+
+<!--
+Outros exemplos
+Um outro elemento que não possui tag de fechamento e que usaremos muito se chama input.
+
+Ora um input é aquela caixinha na qual digitamos texto, ora ele é uma elaborada 
+forma de selecionar uma cor.
+
+Objeto real
+Novamente, vemos o exemplo de um elemento, input, dependendo de um atributo, type, 
+para dar ao navegador informações sobre ele.
+
+Elementos que não precisam de tag de fechamento não permitem o nesting e nunca 
+possuirão outras tags aninhadas dentro delas.
+Existem poucos elementos que possuem apenas tag de abertura, a maioria possui tag 
+de abertura e fechamento.
+
+Como saber qual elemento tem par e qual não tem?
+vem com a experiência, mas uma boa documentação ajuda a acelerar esse conhecimento.
+
+-->

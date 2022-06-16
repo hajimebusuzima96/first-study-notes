@@ -1,0 +1,76 @@
+/*
+Quando usamos float em todos elementos dentro de um contêiner, 
+alguns navegadores podem tratá-lo como se ele tivesse zero pixel de altura.
+
+Antes de vermos um exemplo desse problema e como resolvê-lo, 
+vamos modificar o HTML visto anteriormente para que o h3 e a ul fiquem dentro de uma div.
+
+
+
+...
+<div>
+        <h3>Ingredientes:</h3>
+
+        <ul>
+            <li>3 xícaras de chá de farinha de trigo (Sem fermento)</li>
+            <li>2 xícaras de chá de açúcar</li>
+            <li>3 ovos</li>
+            <li>200 ml de leite</li>
+            <li>4 colheres sopa de manteiga</li>
+            <li>1 colher de sopa de fermento químico em pó</li>
+        </ul>
+    </div>
+...
+
+
+
+Exemplo
+O problema do contêiner com altura de zero pixel ocorre quando todos os elementos em 
+um contêiner estão flutuando.
+
+Para ver um exemplo disso usaremos as seguintes regras sobre o HTML apresentado anteriormente:
+
+
+*/ 
+ 
+div {
+    border: 1px solid #000;
+}
+
+h3 {
+    float: left;
+    width: 200px;
+}
+
+ul {
+    float: right;
+    width: 200px;
+} 
+
+
+
+/*
+Atualmente, a forma de resolver esse problema requer a utilização de duas 
+propriedades para formar um tipo de Hack, um código CSS usada para corrigir
+um problema do navegador:
+
+
+overflow
+width
+
+O Código demonstra como podemos usar essas propriedades para corrigir o problema 
+da altura de zero pixel. É necessário modificar apenas a regra aplicada a div.
+*/ 
+
+
+div {
+    border: 1px solid #000;
+    overflow: auto;
+    width: 100%;
+} 
+
+
+
+
+
+
