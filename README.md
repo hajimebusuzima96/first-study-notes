@@ -7,6 +7,7 @@ Este repositório foi criado durante o estudo de linguagens e frameworks na DevM
 
 Conhecimento que não gruda bem ou leva algum tempo para se estabelecer no meu cérebro. eu venho aqui muitas vezes para ver as coisas :]
 
+Útil para programadores iniciantes.
 
 ## Referência
 
@@ -25,8 +26,3 @@ Conhecimento que não gruda bem ou leva algum tempo para se estabelecer no meu c
 **Front-end:** HTML, CSS, JavaScript, Vue, React, Angular
 
 **Back-end:** Django, Laravel, Node, Spring
-
-
-## Suporte
-
-Para suporte, mande um email para fake@fake.com ou entre em nosso canal do Slack.
