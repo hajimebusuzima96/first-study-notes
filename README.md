@@ -9,11 +9,6 @@ Conhecimento que não gruda bem ou leva algum tempo para se estabelecer no meu c
 
 Útil para programadores iniciantes.
 
-## Referência
-
- - [DevMedia](https://www.devmedia.com.br/)
-
-
 ## Roadmap
 
 - Principais ferramentas e características das liguagens/frameworks utilizados (comentado)
